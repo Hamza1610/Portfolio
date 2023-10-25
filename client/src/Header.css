@@ -1,0 +1,38 @@
+.App-header {
+/* background-color: rgba(7, 38, 33, 2.4); */
+    background-color: rgb(226, 155, 62);
+    min-height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+.logo {
+    /* personal logo */
+}
+.btn-mode {
+    /* background-color: rgba(7, 38, 33, 2.4); */
+}
+.menu_container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+.menu_container a {
+    text-decoration: none;
+}
+.menu_container a div {
+    text-align: center;
+    width: 150px;
+    height: 5vh;
+    font-weight: bold;
+}
+.menu_container a div:hover {
+    color: rgb(7, 238, 7);
+    transition: ease-out 1.5s;
+}
+    
+.App-link {
+    color: #61dafb;
+}

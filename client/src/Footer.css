@@ -1,0 +1,11 @@
+.footer {
+    height: 5vh;
+    background-color: rgb(90, 88, 88);
+}
+.footer p {
+    font-style: italic;
+    padding-top: 10px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}

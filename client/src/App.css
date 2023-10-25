@@ -1,0 +1,15 @@
+* {
+  font-size: calc(10px + 2vmin);
+  /*color: rgb(7, 238, 7);*/
+  color: green;
+  /*Potential colors background-color: rgba(132,131,127,255);*/
+  /*background-color: rgba*/
+  text-align:justify;
+}
+body {
+  /* background-color: rgba(7, 38, 33, 2.4); */
+  background-color: rgb(250, 229, 201);
+}
+#aboutP, #projectP, #contactP {
+  min-height: 7vh;
+} 
