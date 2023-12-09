@@ -1,6 +1,4 @@
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Image'
-import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container';
 import CustomCard from './render_components/Card'
 

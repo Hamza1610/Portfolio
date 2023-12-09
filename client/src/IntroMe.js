@@ -1,5 +1,3 @@
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Image'
 import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container';
 import logo from './resources/me7.png'

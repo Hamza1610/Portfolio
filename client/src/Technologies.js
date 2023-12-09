@@ -1,9 +1,7 @@
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Image'
-import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container';
-import CustomCard from './render_components/Card';
 import RoundCard from './render_components/RoundCard';
+
 const Technologies = () => {
     const experience = [1,2,3,4,5]
     return ( 

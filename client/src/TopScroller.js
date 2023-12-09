@@ -2,7 +2,7 @@
 const TopScroller = () => {
 
     return ( 
-        <a href="#">
+        <a href="#top">
             <div style={{
                 borderRadius: '50%',
                 width: '50px',
