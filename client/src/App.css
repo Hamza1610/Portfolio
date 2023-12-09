@@ -1,16 +1,23 @@
 * {
   font-size: calc(10px + 2vmin);
-  /*color: rgb(7, 238, 7);*/
+  color: white;
   /* color: green; */
-  /*Potential colors background-color: rgba(132,131,127,255);*/
+  /* background-color: rgb(20, 19, 19); */
   /*background-color: rgba*/
   
   text-align:justify;
 
 }
+
 body {
 
 }
 #aboutP, #projectP, #contactP {
   min-height: 7vh;
+}
+.card-link {
+  color: white;
 } 
+.navbar-toggler {
+  background-color: white;
+}
