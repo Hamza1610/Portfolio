@@ -12,7 +12,7 @@ function App() {
   const alt = "Project project"
 
   return (
-    <div className="App">
+    <div className="App bg-dark">
       <Navigation />
       <IntroMe />
       <CustomAccodion />
