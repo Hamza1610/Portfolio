@@ -1,6 +1,6 @@
 import './App.css';
 import './resources/fontawesome-free-6.4.2-web/css/all.min.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './bootstrap/dist/css/bootstrap.min.css';
 import IntroMe from './IntroMe';
 import ContactMe from './Contact_me';
 import Footer from './Footer';
