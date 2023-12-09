@@ -1,27 +1,21 @@
 import './App.css';
-import Header from "./Header";
+import './resources/fontawesome-free-6.4.2-web/css/all.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import IntroMe from './IntroMe';
-import AboutMe from './About_me';
-import Projects from  './Projects';
-import ContactMe from './ContactMe';
+import ContactMe from './Contact_me';
 import Footer from './Footer';
-import SecComponent from './SecComponent';
+import Navigation from './Header';
+import CustomAccodion from './render_components/CustomAccodion';
 
 function App() {
+
   const alt = "Project project"
+
   return (
     <div className="App">
-      <Header />
+      <Navigation />
       <IntroMe />
-      <div id = "aboutP"></div>
-      <SecComponent topic= { "About me" }/>
-      <AboutMe />
-      <div id = "projectP"></div>
-      <SecComponent topic= { "Projects" }/>
-      <Projects  alt = { alt }/>
-      <div id = "contactP"></div>
-      { /* to telegram chat bot */ }
-      <SecComponent topic= { "Contact me" }/>
+      <CustomAccodion />
       <ContactMe />
       <Footer />
     </div>
