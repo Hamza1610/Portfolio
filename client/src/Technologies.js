@@ -1,6 +1,6 @@
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import RoundCard from './render_components/RoundCard';
+import RoundCard from './components/RoundCard';
 
 const Technologies = () => {
     const experience = [1,2,3,4,5]
