@@ -1,6 +1,6 @@
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import CustomCard from './render_components/Card'
+import CustomCard from './components/Card'
 
 const Experience = () => {
     const experience = [1,2,3,4,5]
