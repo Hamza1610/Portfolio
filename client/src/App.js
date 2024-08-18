@@ -5,7 +5,7 @@ import IntroMe from './IntroMe';
 import ContactMe from './Contact_me';
 import Footer from './Footer';
 import Navigation from './Header';
-import CustomAccodion from './render_components/CustomAccodion';
+import CustomAccodion from './components/CustomAccodion';
 
 function App() {
 
