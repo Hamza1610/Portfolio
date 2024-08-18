@@ -5,7 +5,7 @@ const IntroMe = () => {
     return ( 
         <Container id='top' className='w-95 h-100 mt-5' style={{display: 'flex', flexWrap: 'wrap',justifyContent: 'space-around'}}>
                 <div style={{display:'flex', }}>
-                    <Image src={logo} style={{width: '400px', height: '450px'}}/>  
+                    <Image src={logo} style={{width: '100%', height: '450px'}}/>  
                 </div>
                 <div style={{width: '565px'}}>
                     <h3>Full Stack Software Engineer</h3> 
