@@ -6,12 +6,27 @@ import ContactMe from './Contact_me';
 import Footer from './Footer';
 import Navigation from './Header';
 import CustomAccodion from './components/CustomAccodion';
+import Profile from './ProfilePage';
+
+// import { Router, Routes, Route} from 'react-router-dom';
+// import { fetchProfiles } from 'utils/profiles';
 
 function App() {
-
-  const alt = "Project project"
+  // const profiles = await fetchProfiles();
 
   return (
+    /** <Router>
+          <div className="App bg-dark">
+
+            <Routes>
+              { profiles ? profiles.map((profile) => (
+                // how can i pass the profile into the Profile component
+                <Route path={ profile.path } component={Profile}/>
+              )) : }
+            </Routes>
+          </div> 
+        </Router> 
+    **/
     <div className="App bg-dark">
       <Navigation />
       <IntroMe />
