@@ -7,12 +7,13 @@ import Footer from './Footer';
 import Navigation from './Header';
 import CustomAccodion from './components/CustomAccodion';
 import Profile from './ProfilePage';
+import { getProfiles } from './utils/profiles';
 
 // import { Router, Routes, Route} from 'react-router-dom';
 // import { fetchProfiles } from 'utils/profiles';
 
 function App() {
-  // const profiles = await fetchProfiles();
+  // const profiles = await getProfiles();
 
   return (
     /** <Router>
@@ -21,7 +22,7 @@ function App() {
             <Routes>
               { profiles ? profiles.map((profile) => (
                 // how can i pass the profile into the Profile component
-                <Route path={ profile.path } component={Profile}/>
+                <Route path={ profile.path } component={Profile} />
               )) : }
             </Routes>
           </div> 
