@@ -14,7 +14,7 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls='basic-navbar-nav' variant='primary'/>
         <Navbar.Offcanvas
           id={`offcanvasNavbarLabel-expand-lg`}
-          aria-labelled-by={`offcanvasNavbarLabel-expand-lg`}
+          aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
           placement='end'
           onEntering={()=> setOffcanvasStyle({color: 'black'})}
           onExiting={()=> setOffcanvasStyle({color: 'white'})}
