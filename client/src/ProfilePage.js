@@ -1,3 +1,10 @@
+import Navigation from './Header';
+import IntroMe from './IntroMe';
+import Projects  from './Projects';
+import Experience from './Experience';
+import Technologies from './Technologies';
+import ContactMe from './Contact_me';
+import Footer from './Footer';
 
 
 const Profile = ({ profile }) => {
@@ -8,7 +15,9 @@ const Profile = ({ profile }) => {
             { profile }
             <Navigation />
             <IntroMe />
-            <CustomAccodion />
+            <Projects />
+            <Experience />
+            <Technologies />
             <ContactMe />
             <Footer />
         </div>
