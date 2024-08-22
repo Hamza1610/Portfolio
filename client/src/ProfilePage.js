@@ -3,8 +3,14 @@
 const Profile = ({ profile }) => {
 
     return (
-        <div className="App ">
+
+        <div className="App bg-dark">
             { profile }
+            <Navigation />
+            <IntroMe />
+            <CustomAccodion />
+            <ContactMe />
+            <Footer />
         </div>
     )
 }
