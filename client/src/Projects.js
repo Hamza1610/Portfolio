@@ -7,7 +7,7 @@ const Projects = (props) => {
     return (
         <Container>
             <Row md={1}  lg={3}>
-
+                <h4>Projects</h4>
                 {/* For now project will be rendered as template later from database */}
                 {projects && projects.map((item) => (<CustomCard content = {item}/>))}
             </Row>
