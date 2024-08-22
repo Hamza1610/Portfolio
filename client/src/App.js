@@ -6,7 +6,12 @@ import { getProfiles } from './utils/profiles';
 import { Router, Routes, Route} from 'react-router-dom';
 
 function App() {
-  const profiles = getProfiles();
+  const profiles = [
+    { path: 'full_stack_developer', json: {} },
+    { path: 'backend_developer', json: {} },
+    { path: 'frontend_developer', json: {} },
+    { path: 'machine_learning_developer', json: {} },
+];
   console.log(profiles);
   
   return (
