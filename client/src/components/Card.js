@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 const CustomCard = ()=>  {
   return (
     <Col>
-      <Card style={{ width: '15rem', height: '15rem' }} className='m-3 bg-secondary' border='primary'>
+      <Card style={{ width: '15rem', height: '15rem'}} className='custon-card m-3 bg-secondary' border='primary'>
         <Card.Body>
           <Card.Title style={{color:'white'}}><b>Project Title</b></Card.Title>
           <Card.Text>
