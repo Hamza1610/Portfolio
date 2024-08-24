@@ -1,5 +1,6 @@
 
 var express = require('express');
+const ProfileModel = require('../models/profiles');
 var router = express.Router();
 
 /* 
@@ -7,13 +8,18 @@ var router = express.Router();
 */
 
 /* GET profiles listing. */
-router.get('/profile/get-profiles', function(req, res, next) {
-    res.status(200).json({result: [
-        { path: 'full_stack_developer', json: {} },
-        { path: 'backend_developer', json: {} },
-        { path: 'frontend_developer', json: {} },
-        { path: 'machine_learning_developer', json: {} },
-    ]});
+router.get('/add-profile', function(req, res, next) {
+
+    const profile = new ProfileModel({
+        path: '/',
+        detail: "Software engineer with specialization in backend"
+    })
+
+    profile.save()
+
+    console.log(profile);
+    
+    res.status(200).json({});
 });
 
 
