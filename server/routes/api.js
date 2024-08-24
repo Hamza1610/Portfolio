@@ -1,6 +1,6 @@
 
 var express = require('express');
-const ProfileModel = require('../models/profiles');
+const ProfileModel = require('../models/profile');
 var router = express.Router();
 
 /* 
