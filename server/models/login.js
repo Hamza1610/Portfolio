@@ -11,6 +11,6 @@ const LoginSchema = mongoose.Schema({
     }
 }, { timestamps: true })
 
-const ProfileModel = mongoose.model('Login', LoginSchema);
+const LogIn = mongoose.model('Login', LoginSchema);
 
-module.exports = ProfileModel;
+module.exports = LogIn;
