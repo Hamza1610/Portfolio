@@ -1,37 +1,28 @@
 var express = require('express');
 var router = express.Router();
-const ProfileModel = require('../models/profile');
-router.get('/add-profile', function(req, res, next) {
+const Profile = require('../models/profile');
 
+//POST add profile to Profiles
+router.post('/add-profile', function(req, res, next) {
+  res.status(200).json({});
+});
 
-  
+// GET profiles
+router.get('/get-profile', function(req, res, next) {
   res.status(200).json({});
 });
 
 
 /* GET Log in admin */
-router.get('/log-in', function(req, res, next) {
+router.get('/login', function(req, res, next) {
   res.render('login', { title: 'Login', error: '' });
 });
 /* POST  Login */
 router.post('/login', function(req, res, next) {
-  const profile = new ProfileModel({
-    path: '/',
-    detail: "Software engineer with specialization in backend"
-  })
-
-  profile.save()
-  .then((result) => {
-    console.log('Result from saving profile:', result);
-  
-  })
-  .catch((error) => {
-    console.log(error);
-    res.status(200).redirect('/', { error: 'Profile not saved' });
-  });
-
-  console.log(profile);
-  res.status(200).redirect('/');
+  const { username, passkey } = req.body;
+  console.log(username, passkey);
+  res.cookie('rememberme', '1', { expires: new Date(Date.now() + 900000), httpOnly: true });
+  res.render('index', { title: "Dashboard", username: username });
 });
 
 
@@ -42,7 +33,11 @@ router.get('/change-credentials', function(req, res, next) {
 
 /* UPDATE  Login details */
 router.post('/change-credentials', function(req, res, next) {
-  res.status(200).redirect('/');
+  const { username, passkey, newPasskey } = req.body;
+  console.log(req.body);
+
+  res.render('login', { title: 'Login', error: '', message: 'Log in with your new credentials' });
+
 });
 
 module.exports = router;
