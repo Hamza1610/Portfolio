@@ -8,9 +8,10 @@ var router = express.Router();
 */
 
 /* GET profiles. */
-router.get('/', function(req, res, next) {    
+router.get('/get-profiles', function(req, res, next) {    
     res.status(200).json({});
 });
+
 
 
 module.exports = router;
