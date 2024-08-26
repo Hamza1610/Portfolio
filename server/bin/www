@@ -34,7 +34,6 @@ var server = http.createServer(app);
 
 db.connect(urlDB)
 .then((result) => {
-  console.log(result);
   
   server.listen(port);
   server.on('error', onError);
