@@ -10,7 +10,6 @@
         <form action="/auth/login" method="post" class="log-in-form">
             <h1>Admin</h1>
             <%= error ? error : '' %>
-            <%=  message ? message: '' %>
             <legend class="input-legend">
                 <input type="text" name="username" id="username" placeholder="Admin username" class="log-in-input" required>
                 <input type="password" name="passkey" id="passkey" placeholder="passkey"  class="log-in-input" required>
