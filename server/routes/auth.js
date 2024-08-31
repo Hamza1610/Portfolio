@@ -5,7 +5,7 @@ const Profile = require('../models/profile');
 
 /* GET Log in admin */
 router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'Login', error: '' });
+  res.render('login', { title: 'Login', error: ''});
 });
 /* POST  Login */
 router.post('/login', function(req, res, next) {
