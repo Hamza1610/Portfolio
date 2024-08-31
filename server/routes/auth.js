@@ -2,16 +2,6 @@ var express = require('express');
 var router = express.Router();
 const Profile = require('../models/profile');
 
-//POST add profile to Profiles
-router.post('/add-profile', function(req, res, next) {
-  res.status(200).json({});
-});
-
-// GET profiles
-router.get('/get-profile', function(req, res, next) {
-  res.status(200).json({});
-});
-
 
 /* GET Log in admin */
 router.get('/login', function(req, res, next) {
