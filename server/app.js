@@ -15,7 +15,6 @@ var app = express();
 // view engine setup
 
 app.set('views', path.join(__dirname, 'views/pages'));
-app.set(express.static(), path.join(__dirname, 'views/pages'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
