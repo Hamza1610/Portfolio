@@ -1,6 +1,6 @@
 <nav class="dashboard-nav">
-    <div class="">
-        <div class="brand">Admin</div>
+    <div class="brand-div">
+        <h2 class="brand">Admin</h2>
         <div class="menu-sm"><menu type="toolbar">Menu</menu></div>
     </div>
 
@@ -11,14 +11,26 @@
 </nav>
 <style scoped>
       .dashboard-nav {
-        width: 100%;
+        z-index: 20;
+        font-size: 1.5rem;
+        width: 100vw;
         height: 10vh;
-        position: sticky;
+        color: white;
+        position: fixed;
         top: 0px;
         background-color: rgb(39, 118, 236);
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+
+        @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+    .brand-div {
+      display: flex;
+      justify-content: center;
     }
     .brand {
       font-size: 1.2rem;
