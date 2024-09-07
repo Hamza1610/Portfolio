@@ -5,14 +5,14 @@ const Profile = require('../models/profile');
 
 /* GET Log in admin */
 router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'Login', error: ''});
+  res.render('pages/login', { title: 'Login', error: ''});
 });
 /* POST  Login */
 router.post('/login', function(req, res, next) {
   const { username, passkey } = req.body;
   console.log(username, passkey);
   res.cookie('rememberme', '1', { expires: new Date(Date.now() + 900000), httpOnly: true });
-  res.render('index', { title: "Dashboard", username: username });
+  res.render('pages/index');
 });
 
 
