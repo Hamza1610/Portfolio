@@ -8,7 +8,7 @@ var usersRouter = require('./routes/users');
 var profilesRouter = require('./routes/profiles');
 var apiRouter = require('./routes/api/profile');
 var authRouter = require('./routes/auth');
-var expressEjsLayouts = require('express-ejs-layouts');
+// var express3EjsLayouts = require('express3-ejs-layout');
 
 var app = express();
 
@@ -16,7 +16,7 @@ var app = express();
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.set(expressEjsLayouts);
+// app.set(express3EjsLayouts);
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -41,7 +41,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error', { layout: 'layouts/aut' });
+  res.render('error');
 });
 
 module.exports = app;
