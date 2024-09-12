@@ -1,25 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %> | Admin </title>
-</head>
-<body>
-    <div class="log-in-div">
-        <form action="/auth/login" method="post" class="log-in-form">
-            <h1>Admin</h1>
-            <%= error ? error : '' %>
-            <legend class="input-legend">
-                <input type="text" name="username" id="username" placeholder="Admin username" class="log-in-input" required>
-                <input type="password" name="passkey" id="passkey" placeholder="passkey"  class="log-in-input" required>
-            </legend>
-            <button type="submit" class="btn">Log in</button>
-        </form>
-    </div>
-</body>
+<div class="log-in-div">
+    <form action="/auth/login" method="post" class="log-in-form">
+        <h1>Admin</h1>
+        <%= error ? error : '' %>
+        <legend class="input-legend">
+            <input type="text" name="username" id="username" placeholder="Admin username" class="log-in-input" required>
+            <input type="password" name="passkey" id="passkey" placeholder="passkey"  class="log-in-input" required>
+        </legend>
+        <button type="submit" class="btn">Log in</button>
+    </form>
+</div>
 <style scoped>
-        * {
+    * {
         padding: 0px;
         margin: 0px;
     }
@@ -120,4 +111,3 @@
         }
     }
 </style>
-</html>
