@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
 app.use('/', indexRouter);
-app.use('/', profilesRouter);
+app.use('/profiles', profilesRouter);
 app.use('/api', apiRouter);
 app.use('/auth', authRouter);
 app.use('/users', usersRouter);
@@ -45,4 +45,34 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+
+
+
+// Changing server config to nodemon 
+/**
+ * Create HTTP server.
+ */
+var http = require('http');
+var server = http.createServer(app);
+
+/* 
+require and initialize mogoose ORM
+*/
+var urlDB = "mongodb://localhost:27017/"
+var db = require('mongoose');
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+
+db.connect(urlDB)
+.then((result) => {
+  console.log(process.env.PORT || 3002);
+  
+  server.listen(process.env.PORT || 3002);
+})
+.catch((error) => console.log(error));
+
+
+// module.exports = app;
+
