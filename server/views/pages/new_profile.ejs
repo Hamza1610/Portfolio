@@ -1,0 +1,111 @@
+<head>        
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/bootstrap-theme.css"/>
+
+    <title><%= title %></title>
+</head>
+
+<div>
+    <div>
+        <h1 class="text-center">Create new Profile</h1>
+    </div>
+
+    <form class="row g-3 needs-validation w-100 d-flex justify-content-center" novalidate>
+        <!-- Personal information -->
+         <fieldset class="data-fieldset p-3">
+            <legend>Personal Information</legend>
+            <div class="ms-2 ms-sm-5">
+                <label class="fs-5 fw-semibold" for="name">Full name</label>
+                <input class="form-control-lg w-100" type="text" name="name" id="name" required>
+
+                <label class="fs-5 fw-semibold" for="title">Title</label>
+                <input  class="form-control-lg w-100" type="text" name="title" id="title" required>
+
+                <label class="fs-5 fw-semibold" for="address">Address</label>
+                <input class="form-control-lg w-100" type="text" name="address" id="address" required>
+                
+            </div>
+         </fieldset>
+
+        <!--  Education -->
+        <fieldset class="data-fieldset p-3">
+            <legend>Education</legend>
+            <div class="ms-2 ms-sm-5">
+                <div>
+                    <label for="institution">Name of Institution</label>
+                    <input class="form-control-lg w-100" type="text" name="institution" id="institution" required>
+                    <div class="input-group-lg d-flex gap-3 flex-wrap">
+                        <label class="fs-4  fw-semibold" for="started">Started</label>
+                        <input class="input-group-text" type="date" name="address" id="started" required>
+
+                        <label class="fs-4 fw-semibold" for="finish">Finish</label>
+                        <input class="input-group-text" type="date" name="finish" id="finish" required>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-success">Add</button>
+                    <button class="btn btn-danger">Remove</button>
+                </div>
+                
+            </div>
+         </fieldset>
+
+        <!-- Experience -->
+        <fieldset class="data-fieldset p-3">
+            <legend>Experience</legend>
+         </fieldset>
+
+        <!--  Summary-->
+        <fieldset class="data-fieldset p-3">
+            <legend>Summary</legend>
+         </fieldset>
+
+        <!-- Contact -->
+        <fieldset class="data-fieldset p-3">
+            <legend>Contact</legend>
+        </fieldset>
+
+        <!-- Certifications -->
+        <fieldset class="data-fieldset p-3">
+            <legend>Certification</legend>
+        </fieldset>
+
+        <!-- Programming Languages -->
+        <fieldset class="data-fieldset p-3">
+            <legend>Languages/Frameworks</legend>
+        </fieldset>
+
+        <!-- Skills -->
+        <fieldset class="data-fieldset p-3">
+            <legend>Skills</legend>
+        </fieldset>
+
+        <!-- Projects -->
+        <fieldset class="data-fieldset p-3">
+            <legend>Projects</legend>
+        </fieldset>
+
+        <div class="col-12 text-center">
+            <button class="btn btn-outline-success" type="submit">Create Profile</button>
+        </div>
+    </form>
+</div>
+
+<style scoped>
+    .data-fieldset {
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 1px;
+        width: 65%;
+
+        @media (max-width: 767px) {
+            width: 80%;
+        }
+
+        @media (max-width: 320px) {
+            width: 300px;
+        }
+    }
+</style>
