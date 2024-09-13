@@ -8,7 +8,7 @@ var router = express.Router();
 */
 
 // POST add profile to Profiles
-router.post('/add-profile', function(req, res, next) {
+router.post('/create-profile', function(req, res, next) {
     res.status(200).json({});
   });
   
@@ -16,6 +16,12 @@ router.post('/add-profile', function(req, res, next) {
 router.get('/get-profile', function(req, res, next) {
     res.status(200).json({});
 });
+
+// GET  ALL profiles
+router.get('/get-all-profiles', function(req, res, next) {
+    res.status(200).json({});
+});
+
 
 
 module.exports = router;
