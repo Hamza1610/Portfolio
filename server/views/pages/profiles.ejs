@@ -1,5 +1,175 @@
-<div>
+<!-- Inject bootstrap  endpoints-->
+<head>        
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/bootstrap-theme.css"/>
 
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <title><%= title %></title>
+</head>
+
+<div class="w-100">
+    <div style="position: sticky; float: right;">
+        <a class="btn" href="profiles/create_profile">Create profile</a>
+    </div>
+    <div>
+        <h1><%= title %></h1>
+        <p>Welcome to <%= title %></p>
+    </div>
+    <div class="" style="width: 100%; display: flex; justify-content: center; height: 100%;">
+        <div class="cards-div-content">
+            <!-- Fetch profiles form database -->
+            <div class="custom-card">
+                <div class="profile-pic-div">
+                    <!-- Profile image -->
+                    <img src="/images/my profile picture.jpg" alt="" style="width: 100%; height: 100%;">
+                </div>
+                <div style="position: absolute;">
+                    <!-- Profile Title -->
+                    <h2>Fullstack Developer</h2>
+                    <div style="width: 100%;">
+                        Languages:
+                        <!-- Key language -->
+                        <ul style="display: flex; flex-direction: row; gap: 10px; flex-wrap: wrap; list-style: none;">
+                            <li>Node js |</li>
+                            <li>React |</li>
+                            <li>Express |</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <a class="btn" href="">Open profile</a>
+                </div>
+            </div>
+
+            <div class="custom-card">
+                <div class="profile-pic-div">
+                    <!-- Profile image -->
+                    <img src="/images/my profile picture.jpg" alt=""style="width: 100%; height: 100%;">
+                </div>
+                <div style="position: absolute;">
+                    <h2>Backend Developer</h2>
+                    <div style="width: 100%;">
+                        Languages:
+                        <!-- Key language -->
+                        <ul style="display: flex; flex-direction: row; gap: 10px; flex-wrap: wrap; list-style: none;">
+                            <li>Node js</li>
+                            <li>React |</li>
+                            <li>Express |</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <a class="btn" href="">Open profile</a>
+                </div>
+            </div>
+            
+            <div class="custom-card">
+                <div class="profile-pic-div">
+                    <!-- Profile image -->
+                    <img src="/images/my profile picture.jpg" alt="" style="width: 100%; height: 100%;">
+                </div>
+                <div style="position: absolute;">
+                    <h2>AI/ML Developer</h2>
+                    <div style="width: 100%;">
+                        Languages:
+                        <!-- Key language -->
+                        <ul style="display: flex; flex-direction: row; gap: 10px; flex-wrap: wrap; list-style: none;">
+                            <li>Node js</li>
+                            <li>React | </li>
+                            <li>Express | </li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <a class="btn">Open profile</a>
+                </div>
+            </div>
+            
+            <div class="custom-card">
+                <div class="profile-pic-div">
+                    <!-- Profile image -->
+                    <img src="/images/my profile picture.jpg" alt="" style="width: 100%; height: 100%;">
+                </div>
+                <div style="position: absolute;">
+                    <h2>Node js Developer</h2>
+                    <div style="width: 100%;">
+                        Languages:
+                        <!-- Key language -->
+                        <ul style="display: flex; flex-direction: row; flex-wrap: wrap; list-style: none;">
+                            <li>Node js</li>
+                            <li>React |</li>
+                            <li>Express |</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <a class="btn">Open profile</a>    
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<style>
+    .cards-div-content {
+        width: 75%;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        @media (max-width: 425px) {
+            justify-content: center;
+            
+        }        
+    }
+    .custom-card {
+        color: white;
+        width: 370px;
+        height: 500px;
+        background-color: rgb(236, 234, 234);
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 10px;
+        padding: 10px;
+        text-wrap: wrap;
+
+        @media (max-width: 350px) {
+            width: 500px;
+            
+        }
+
+    }
+    .custom-card:hover {
+        background-color: rgb(141, 140, 140);
+        transition: all .5s;
+    }
+
+    .profile-pic-div {
+        max-width: 100%;
+        max-height: 45%;
+
+        @media (max-width: 425px) {
+            width: 250px;
+
+        }
+    }
+    .btn {
+        border-radius: 10px;
+        color: white;
+        background-color: rgb(27, 247, 126);
+        padding: 10px;
+        font-size: 1.3rem;
+
+        @media (max-width: 350px) {
+            font-size: 1rem;
+            padding: 5px;
+        }
+
+    }
+
+    .btn:hover {
+        color: black;
+        border-style: solid;
+        border-width: 5px;
+        background-color: white;
+        transition: ease-out .5s;
+    }
+</style>
