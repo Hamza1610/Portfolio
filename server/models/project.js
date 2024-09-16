@@ -2,15 +2,11 @@ const mongoose = require('mongoose');
 
 
 const ProjectSchema = mongoose.Schema({
-    "Name": {
+    "Title": {
         type: String,
         required: true
     },
-    "Stack": {
-        type: String,
-        required: true
-    },
-    "Details": {
+    "Summary": {
         type: String,
         required: true
     },
