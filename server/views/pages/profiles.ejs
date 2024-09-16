@@ -10,99 +10,28 @@
 
 <div class="w-100">
     <div style="position: sticky; float: right;">
-        <a class="btn" href="profiles/create_profile">Create profile</a>
+        <a class="fs-4 me-3" href="/">Back</a>
+        <a class="btn" href="/profiles/create_profile">Create profile</a>
     </div>
     <div>
         <h1><%= title %></h1>
-        <p>Welcome to <%= title %></p>
     </div>
     <div class="" style="width: 100%; display: flex; justify-content: center; height: 100%;">
         <div class="cards-div-content">
             <!-- Fetch profiles form database -->
-            <div class="custom-card">
-                <div class="profile-pic-div">
-                    <!-- Profile image -->
-                    <img src="/images/my profile picture.jpg" alt="" style="width: 100%; height: 100%;">
-                </div>
-                <div style="position: absolute;">
-                    <!-- Profile Title -->
-                    <h2>Fullstack Developer</h2>
-                    <div style="width: 100%;">
-                        Languages:
-                        <!-- Key language -->
-                        <ul style="display: flex; flex-direction: row; gap: 10px; flex-wrap: wrap; list-style: none;">
-                            <li>Node js |</li>
-                            <li>React |</li>
-                            <li>Express |</li>
-                            <li>MongoDB</li>
-                        </ul>
+             <% profiles ? profiles.map((profile) => { %>
+                <div class="custom-card">
+                    <div class="profile-pic-div">
+                        <!-- Profile image -->
+                        <img src="/images/my profile picture.jpg" alt="" style="width: 100%; height: 100%;">
                     </div>
-                    <a class="btn" href="">Open profile</a>
-                </div>
-            </div>
-
-            <div class="custom-card">
-                <div class="profile-pic-div">
-                    <!-- Profile image -->
-                    <img src="/images/my profile picture.jpg" alt=""style="width: 100%; height: 100%;">
-                </div>
-                <div style="position: absolute;">
-                    <h2>Backend Developer</h2>
-                    <div style="width: 100%;">
-                        Languages:
-                        <!-- Key language -->
-                        <ul style="display: flex; flex-direction: row; gap: 10px; flex-wrap: wrap; list-style: none;">
-                            <li>Node js</li>
-                            <li>React |</li>
-                            <li>Express |</li>
-                            <li>MongoDB</li>
-                        </ul>
+                    <div style="position: absolute; margin-left: 15px; margin-top: 120px;">
+                        <!-- Profile Title -->
+                        <h2><%=  profile.Title %></h2>
+                        <a class="btn" href= /profiles/<%= profile._id %> >Open profile</a>
                     </div>
-                    <a class="btn" href="">Open profile</a>
                 </div>
-            </div>
-            
-            <div class="custom-card">
-                <div class="profile-pic-div">
-                    <!-- Profile image -->
-                    <img src="/images/my profile picture.jpg" alt="" style="width: 100%; height: 100%;">
-                </div>
-                <div style="position: absolute;">
-                    <h2>AI/ML Developer</h2>
-                    <div style="width: 100%;">
-                        Languages:
-                        <!-- Key language -->
-                        <ul style="display: flex; flex-direction: row; gap: 10px; flex-wrap: wrap; list-style: none;">
-                            <li>Node js</li>
-                            <li>React | </li>
-                            <li>Express | </li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
-                    <a class="btn">Open profile</a>
-                </div>
-            </div>
-            
-            <div class="custom-card">
-                <div class="profile-pic-div">
-                    <!-- Profile image -->
-                    <img src="/images/my profile picture.jpg" alt="" style="width: 100%; height: 100%;">
-                </div>
-                <div style="position: absolute;">
-                    <h2>Node js Developer</h2>
-                    <div style="width: 100%;">
-                        Languages:
-                        <!-- Key language -->
-                        <ul style="display: flex; flex-direction: row; flex-wrap: wrap; list-style: none;">
-                            <li>Node js</li>
-                            <li>React |</li>
-                            <li>Express |</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
-                    <a class="btn">Open profile</a>    
-                </div>
-            </div>
+             <% }) : 'No profile Available' %>
         </div>
     </div>
 </div>
