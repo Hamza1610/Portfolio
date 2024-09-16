@@ -2,11 +2,7 @@ const mongoose = require('mongoose');
 
 
 const ProfileSchema = mongoose.Schema({
-    path: {
-        type: String,
-        required: true
-    },
-    details: {
+    Title: {
         type: String,
         required: true
     }
