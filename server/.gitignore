@@ -1,6 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 node_modules
 =======
 /node_modules
 >>>>>>> 8f8ac71 (modify .gitignore)
+=======
+/node_modules
+>>>>>>> a8cc968 (Restore corrupted .git files)
 .env
