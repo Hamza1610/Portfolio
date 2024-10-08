@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>        
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/bootstrap-theme.css"/>
+
+    <title><%= title %></title>
+</head>
+
+<body>
+    <div class="position-sticky">
+      <%- include('./partials/nav.ejs') %>
+    </div>
+    <div class="w-100 d-flex justify-content-between">
+      <div class="position-sticky">
+        <%- include('./partials/sidemenu.ejs') %>
+      </div> 
+
+      <div class="position-sticky" style="width: 90%;">
+        <div class="position-fixed overflow-scroll overflow-x-hidden w-100 gap-5" style="height: 90%;">
+          <main class="d-flex justify-content-center flex-column">
+            <%- include("./pages/" + page ) %>
+            <footer class="mt-5 w-100 bg-dark text-white-50 text-center container-fluid" style="height: 50px;">
+              <i class="fa fa-copyright" aria-hidden="true"></i> Muhammad Hamza. All Rights reserved.
+            </footer>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+  <style scoped>
+    body {
+      height: 100vh;
+      background-color: rgb(238, 240, 243);
+      margin-top: 0px;
+      padding: 0px;
+
+      @media (max-width: 575px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 95%;
+      float: right;
+    }
+
+
+    .dashboard-content {
+      width: 90%;
+      @media (max-width: 768px) {
+        visibility: hidden;
+        width:100%;
+      }
+    }
+  </style>
+  <script type="application/javascript" src="/js/bootstrap.js"></script>
+</html>
