@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { motion } from "framer-motion";
 import axios from 'axios'
 import ProfileCard from './components/ProfileCard'
 
@@ -38,17 +39,20 @@ const  ProfileList = () => {
                 alignItems: 'center',
                 height: '100vh'
                 }}>
-            <div>{error && (<p>error</p>)}</div>
             <div style={{width: '80%',
                 display: 'flex',
                 justifyContent:'space-evenly',
                 alignItems: 'center',
                 flexWrap:'wrap', gap: '20px'}}>
                 {profiles.length < 1 && (
-                    <div>
+                    <motion.div
+                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0.2, x: 70 }}
+                        transition={{ duration: .75, delay: .5 }}
+                    >
                         <h3>No Available Profile</h3>
                         <p style={{ textAlign: 'center' }}>Please refresh your browser</p>
-                    </div>
+                    </motion.div>
                 )}
                 {profiles && profiles.map((profile, index) => (<ProfileCard key={index} {...profile }/>))}
             </div>
