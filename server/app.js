@@ -24,6 +24,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
+
+app.use(express.static(path.join(__dirname, 'node_modules/axios/dist/axios.js')));
+
 app.use('/', indexRouter);
 app.use('/profiles', profilesRouter);
 app.use('/api', apiRouter);

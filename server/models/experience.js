@@ -2,24 +2,28 @@ const mongoose = require('mongoose');
 
 
 const ExperienceSchema = mongoose.Schema({
-    "Role Title": {
+    "ProfileID": {
         type: String,
         required: true
     },
-    "Role  Description": {
+    "Title": {
         type: String,
         required: true
     },
-    "Started Role Date": {
+    "Description": {
+        type: String,
+        required: true
+    },
+    "Started": {
         type: Date,
         required: true
     },
-    "Finish Role Date": {
+    "Finish": {
         type: Date,
         required:false
     },
 }, { timestamps: true })
 
-const Experience = mongoose.model('Profile', ExperienceSchema);
+const Experience = mongoose.model('Experience', ExperienceSchema);
 
 module.exports = Experience;

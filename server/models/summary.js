@@ -2,7 +2,11 @@ const mongoose = require('mongoose');
 
 
 const SummarySchema = mongoose.Schema({
-    Summary: {
+    Content: {
+        type: String,
+        required: true
+    },
+    ProfileID: {
         type: String,
         required: true
     },

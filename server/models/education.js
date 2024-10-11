@@ -2,15 +2,19 @@ const mongoose = require('mongoose');
 
 
 const EducationSchema = mongoose.Schema({
-    Institution: {
+    ProfileID: {
         type: String,
         required: true
     },
-    "Started year": {
-        type: Date,
+    Name: {
+        type: String,
         required: true
     },
-    "Finish year": {
+    "Started": {
+        type: Date,
+        required: false
+    },
+    "Finish": {
         type: Date,
         required: false
     },

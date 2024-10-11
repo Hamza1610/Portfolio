@@ -2,19 +2,23 @@ const mongoose = require('mongoose');
 
 
 const ContactSchema = mongoose.Schema({
-    "Phone number": {
+    "ProfileID": {
         type: String,
         required: true
     },
-    "Github link": {
+    "PhoneNumber": {
         type: String,
         required: true
     },
-    "LinkedIn link": {
+    "Github": {
         type: String,
         required: true
     },
-    "X link": {
+    "LinkedIn": {
+        type: String,
+        required: true
+    },
+    "X": {
         type: String,
         required: true
     },

@@ -1,32 +1,25 @@
-<head>        
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap.css"/>
-    <!-- <link rel="stylesheet" href="/css/bootstrap-theme.css"/> -->
-    
-    <title><%= title %></title>
-</head>
-<div class="sticky-top float-end fs-5">
-    <a id="navigate_back" href="/profiles">Back</a>
+
+<div class="sticky-top float-end fs-5 mb-5">
+    <a class="position-fixed" id="navigate_back" href="/profiles">Back</a>
 </div>
 <div>
     <div>
         <h1 class="text-center">Create new Profile</h1>
     </div>
 
-    <div class="row g-3 needs-validation w-100 d-flex justify-content-center" novalidate>
+    <div class="row g-3 needs-validation w-100 d-flex justify-content-center align-items-center">
         <!-- Personal information -->
          <fieldset class="data-fieldset p-3">
             <legend>Personal Information</legend>
             <div class="ms-2 ms-sm-5">
-                <label class="fs-5 fw-semibold" for="name">Full name</label>
-                <input class="form-control w-100" type="text" name="name" id="fullName" required>
+                <label class="fw-semibold" for="name">Full name</label>
+                <input class="form-control w-100" type="text" name="Full name" id="fullName" required>
 
-                <label class="fs-5 fw-semibold" for="title">Title</label>
-                <input  class="form-control w-100" type="text" name="title" id="title" required>
+                <label class="fw-semibold" for="title">Title</label>
+                <input  class="form-control w-100" type="text" name="Title" id="title" required>
 
-                <label class="fs-5 fw-semibold" for="address">Address</label>
-                <input class="form-control w-100" type="text" name="address" id="address" required>
+                <label class="fw-semibold" for="address">Address</label>
+                <input class="form-control w-100" type="text" name="Address" id="address" required>
                 
             </div>
          </fieldset>
@@ -34,48 +27,46 @@
         <!--  Education -->
         <fieldset class="data-fieldset p-3">
             <legend>Education</legend>
-            <div class="ms-2 ms-sm-5">
-                <div>
+            <!-- Eductaion list -->
+            <div id="education-container" class="education-container ms-2 ms-sm-5 mt-5 d-flex flex-wrap flex-column gap-2">
+                <div class="education-group d-flex gap-4 flex-wrap">
                     <label class="fw-semibold" for="institution">Name of Institution</label>
-                    <input class="form-control " type="text" name="institutionName" id="institution" required>
-                    <div class="d-flex gap-3 flex-wrap">
-                        <label class=" fw-semibold" for="started">Started</label>
-                        <input class="form-control" type="date" name="startedInstitutionDate" id="edu_started" required>
-
-                        <label class="fw-semibold" for="finish">Finish</label>
-                        <input class="form-control" type="date" name="finishedInstitutionDate" id="edu_finish" required>
-                    </div>
+                    <input class="institution w-100 form-control" type="text" name="Institution name" id="institution" required>
+                    <label class="fw-semibold" for="started">Started</label>
+                    <input class="edu_started w-25  form-control" type="date" name="Institution started date" id="edu_started" required>
+                    <label class="fw-semibold" for="finish">Finish</label>
+                    <input class="edu_finish w-25 form-control" type="date" name="Institution finish date" id="edu_finish" required>
+                    <button class="m-2 btn btn-danger" onclick="removeFieldGroup(this)">Remove</button>    
                 </div>
-                <div>
-                    <button class="btn btn-success">Add</button>
-                    <button class="btn btn-danger">Remove</button>
-                </div>
-                
             </div>
-         </fieldset>
+            <div class="w-100 d-flex justify-content-center">
+                <button class="m-3 w-25 text-center btn btn-success" onclick="addEducationFieldGroup()">Add</button>
+            </div>
+        </fieldset>
 
         <!-- Experience -->
         <fieldset class="data-fieldset p-3">
             <legend>Experience</legend>
-            <div class="ms-2 ms-sm-5">
-                <div>
+            <div id="experience-container" class="experience-container ms-2 ms-sm-5">
+                <div class="experience-group">
                     <label for="role_title">Role Title</label>
-                    <input class="form-control w-100" type="text" name="roleTitle" id="role_title" required>
+                    <input class="role_title form-control w-100" type="text" name="Role title" id="role_title" required>
                     
                     <label for="role_description">Role  Description</label>
-                    <textarea class="form-control w-100 h-auto" cols="30" rows="5" type="text" name="roleDescription" id="role_description" required></textarea>
+                    <textarea class="role_description form-control w-100 h-auto" cols="30" rows="5" type="text" name="roleDescription" id="role_description" required></textarea>
                     <div class="d-flex gap-3 flex-wrap">
-                        <label class="fs-4  fw-semibold" for="started">Started</label>
-                        <input class="form-control" type="date" name="startedRoleDate" id="role_started" required>
+                        <label class="fw-semibold" for="started">Started</label>
+                        <input class="role_started form-control" type="date" name="Started Role date" id="role_started" required>
 
-                        <label class="fs-4 fw-semibold" for="finish">Finish</label>
-                        <input class="form-control" type="date" name="finishedRoleDate" id="role_finish" required>
+                        <label class="fw-semibold" for="finish">Finish</label>
+                        <input class="role_finish form-control" type="date" name="Finish role date" id="role_finish" required>
                     </div>
-                </div>
-                <div>
-                    <button class="btn btn-success">Add</button>
-                    <button class="btn btn-danger">Remove</button>
-                </div>
+                    <button class="btn btn-danger" onclick="removeFieldGroup(this)">Remove</button>
+                </div> 
+            </div> 
+            <div class="w-100 d-flex justify-content-center">
+                <button class="m-3 w-25 text-center btn btn-success" onclick="addExperienceFieldGroup()">Add</button>
+            </div>  
          </fieldset>
 
         <!--  Summary-->
@@ -84,7 +75,7 @@
             <label for="summary">About me</label>
 
             <div class="ms-2 ms-sm-5">
-                <textarea class="form-text form-control-lg w-100 h-auto" name="summary" id="summary" cols="30" rows="5"></textarea>
+                <textarea class="form-text form-control-lg w-100 h-auto" name="Summary" id="summary" cols="30" rows="5"></textarea>
                 <div class="text-center m-3">
                     <button class="btn btn-success fs-6">Generate summary</button>
                 </div>
@@ -96,83 +87,72 @@
             <legend>Contact</legend>
             <div class="ms-2 ms-sm-5 d-flex gap-2 flex-wrap">
                 <label for="phoneNumber">Phone Number</label>
-                <input class="form-control w-100" type="tel" name="phoneNumber" id="phoneNumber">
+                <input class="form-control w-100" type="tel" name="Phone number" id="phoneNumber">
 
                 <label for="github">GitHub link</label>
-                <input class="form-control w-100" type="url" name="githubLink" id="github">
+                <input class="form-control w-100" type="url" name="Github link" id="github">
 
                 <label for="linkedin">LinkedIn link</label>
-                <input class="form-control w-100" type="url" name="LinkedInLink" id="linkedin">
+                <input class="form-control w-100" type="url" name="LinkedIn link" id="linkedin">
 
                 <label for="x">X link</label>
-                <input class="form-control w-100"type="url" name="XLink" id="x">
+                <input class="form-control w-100"type="url" name="X Link" id="x">
             </div>
         </fieldset>
 
-        <!-- Certifications -->
-        <fieldset class="data-fieldset p-3">
-            <legend>Certification</legend>
-            <div class="ms-2 ms-sm-5">
-                <label for="cert_type">Certification type</label>
-                <input class="form-control" type="text" name="certificationType" id="cert_type">
-
-                <label for="cert_image">Upload certificate</label>
-                <input class="form-control" type="file" accept=".pdf, .jpg, .png" name="certificationType" id="cert_image">
-                <div class="m-4">
-                    <button class="btn btn-success">Add</button>
-                    <button class="btn btn-danger">Remove</button>
-                </div>
-            </div>
-            
-        </fieldset>
 
         <!-- Programming Languages -->
         <fieldset class="data-fieldset p-3">
             <legend>Languages/Frameworks</legend>
-            <div class="ms-2 ms-sm-5 d-flex flex-wrap gap-2">
-                <label for="framework">Select Language/Framework</label>
-                <input class="form-control w-100 m-1" type="text" name="language" id="framework">
-                <button class="btn btn-success">Add</button>
-                <button class="btn btn-danger">Remove</button>
+            <div id="framework-container" class="framework-container ms-2 ms-sm-5 d-flex flex-wrap gap-2">
+                <div class="framework-group d-flex gap-3">
+                    <input class="framework form-control w-75 m-1" placeholder="example: Node js, Python, Ruby .." type="text" name="Framework/Languages" id="framework">
+                    <button class="btn btn-danger" onclick="removeFieldGroup(this)">Remove</button>
+                </div>
             </div>
+            <div class="w-100 d-flex justify-content-center">
+                <button class="m-3 w-25 text-center btn btn-success" onclick="addFrameworkFieldGroup()">Add</button>
+            </div> 
         </fieldset>
 
         <!-- Skills -->
         <fieldset class="data-fieldset p-3">
             <legend>Skills</legend>
-            <div class="ms-2 ms-sm-5 d-flex flex-column gap-2">
-                <label for="skills">Add Your skills</label>
-                <input class="form-control w-75 m-1" type="text" name="skills" id="skills">
-                <div>
-                    <button class="btn btn-success">Add</button>
-                    <button class="btn btn-danger">Remove</button>
+            <div id="skills-container" class="skills-container ms-2 ms-sm-5 d-flex flex-row flex-wrap gap-2">
+                <div class="skill-group w-25 d-flex flex-nowrap">
+                    <input class="skills form-control m-1" placeholder="example: Time emanagement | Critical thinking .." type="text" name="Skills" id="skills">
+                    <button class="btn btn-danger w-auto" onclick="removeFieldGroup(this)">Remove</button>
                 </div>
+            </div>
+            <div class="w-100 d-flex justify-content-center">
+                <button class="m-3 w-25 text-center btn btn-success" onclick="addSkillFieldGroup()">Add</button>
             </div>
         </fieldset>
 
         <!-- Projects -->
         <fieldset class="data-fieldset p-3">
             <legend>Projects</legend>
-            <div class="ms-2 ms-sm-5 d-flex flex-column gap-2">
-                <label for="project_title">Project Title</label>
-                <input class="form-control w-75 m-1" type="text" name="projectTitle" id="project_title">
-
-                <label for="project_summary">Project summary</label>
-                <textarea class="form-control w-100 m-1 h-auto" rows="5" type="text" name="projectSummary" id="project_summary"></textarea>
-                
-                <label for="project_technologies">Technologies</label>
-                <input class="form-control w-100 m-1 h-auto" placeholder="example: Node js, React, OpenAI" rows="5" type="text" name="projectTechnologies" id="project_technologies">
-                
-                <label for="project_github_link">Github link</label>
-                <input class="form-control w-100 m-1 h-auto" rows="5" type="url" name="projectGithubLink" id="project_github_link">
-                
-                <label for="project_live_link">Live link</label>
-                <input class="form-control w-100 m-1 h-auto" rows="5" type="text" name="projectLiveLink" id="project_live_link">
-                
-                <div>
-                    <button class="btn btn-success">Add</button>
-                    <button class="btn btn-danger">Remove</button>
+            <div id="projects-container" class="projects-container ms-2 ms-sm-5 d-flex flex-column gap-2">
+                <div class="project-group">
+                    <label for="project_title">Project Title</label>
+                    <input class="project_title form-control w-75 m-1" type="text" name="Project title" id="project_title">
+    
+                    <label for="project_summary">Project summary</label>
+                    <textarea class="project_summary form-control w-100 m-1 h-auto" rows="5" type="text" name="Project summary" id="project_summary"></textarea>
+                    
+                    <label for="project_technologies">Technologies</label>
+                    <input class="project_technologies form-control w-100 m-1 h-auto" placeholder="example: Node js, React, OpenAI" rows="5" type="text" name="Project technologies" id="project_technologies">
+                    
+                    <label for="project_github_link">Github link</label>
+                    <input class="project_github_link form-control w-100 m-1 h-auto" rows="5" type="url" name="Project github link" id="project_github_link">
+                    
+                    <label for="project_live_link">Live link</label>
+                    <input class="project_live_link form-control w-100 m-1 h-auto" rows="5" type="text" name="Project live link" id="project_live_link">
+                    <button class="btn btn-danger m-3" onclick="removeFieldGroup(this)">Remove</button>
                 </div>
+            </div>
+            <div class="w-100 d-flex justify-content-center">
+                <button class="m-3 w-25 text-center btn btn-success" onclick="addProjectFieldGroup()">Add</button>
             </div>
         </fieldset>
 
@@ -183,41 +163,14 @@
     </div>
 </div>
 
-<!-- <script src="/javascripts/new_profile.js"></script> -->
-<script>
-    
-const navigateBack = document.getElementById('navigate_back');
-const error = document.getElementById('error');
-
-
-const createProfile = async () => {
-    
-    console.log('CreateProfile click');
-    const form = new FormData();
-    const notification = new Notification('Testing')
-
-    notification.body = "Hello friend"
-    notification.title = "Testing"
-    const response = await fetch('', {
-        method: 'POST',
-        body: form,
-    });
-    if (response.ok) {
-        // history.back()
-        // navigateBack.click();
-    } else {
-        error.textContent = "Eroor occured"
-    }
-}
-
-</script>
+<script src="/javascripts/new_profile.js"></script>
 
 <style scoped>
     .data-fieldset {
         border-style: solid;
         border-radius: 10px;
         border-width: 1px;
-        width: 65%;
+        width: 80%;
 
         @media (max-width: 767px) {
             width: 80%;

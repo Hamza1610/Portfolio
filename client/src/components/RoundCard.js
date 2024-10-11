@@ -1,13 +1,12 @@
+
 import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
 import logo from '../logo.svg';
-const RoundCard = () => {
+const RoundCard = ({ imageSource }) => {
     return (
-        <Card style={{width:'220px', height:'220px',}}  className='m-2 bg-dark' border='primary'>
-            <Image src={logo} alt='Technology Image' style={{width:'160px', height:'160px'}} roundedCircle/>
-            <div style={{width:'220px'}}>
-                <b style={{fontSize:'0.7rem'}}>Programming language</b>
-            </div>
+        <Card style={{width:'100px', height:'100px',}}  className='m-2 bg-dark d-flex justify-content-center align-items-center' border='primary'>
+            <Image src={imageSource} alt='Technology Image' style={{width:'90px', height:'90px'}} roundedCircle/>
+            {/* <Image src={logo} alt='Technology Image' style={{width:'90px', height:'90px'}} roundedCircle/> */}
         </Card>
     )
 }

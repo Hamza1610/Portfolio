@@ -1,7 +1,12 @@
+
 const mongoose = require('mongoose');
 
 
 const ProjectSchema = mongoose.Schema({
+    "ProfileID": {
+        type: String,
+        required: true
+    },
     "Title": {
         type: String,
         required: true
@@ -14,11 +19,11 @@ const ProjectSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    "Codebase link": {
+    "GitHub": {
         type: String,
         required: true
     },
-    "Demo link": {
+    "Demo": {
         type: String,
         required: true
     }

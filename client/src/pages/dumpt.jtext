@@ -1,0 +1,85 @@
+            {PersonalInfo && PersonalInfo.map((info, key) => (
+        <div key={key}>
+          <h1>Personalnfo</h1>
+          <p>{info.Title}</p>
+          {/* Render other profile info */}
+          <p>Address: {info.Address}</p>
+          <p>Name: {info.Name}</p>
+          <p>ProfileId: {info.ProfileID}</p>
+        </div>
+      ))}
+
+      {Summary && Summary.map((info, key) => (
+        <div key={key}>
+          <h1>Summary</h1>
+          {console.log('Key:', key)}
+          {console.log('PersonalInfo:', info)}
+          <p>{info.Content}</p>
+        </div>
+      ))}
+
+
+
+           {Education && Education.map((info, key) => (
+        <div key={key}>
+          <h1>Education</h1>
+          {console.log('Key:', key)}
+          {console.log('PersonalInfo:', info)}
+          <p>Intitution Name{info.Name}</p>
+          <p>Date started: {info.Started}</p>
+          <p>Date Finsh: {info.Finish}</p>
+        </div>
+      ))}
+      {Experience && Experience.map((info, key) => (
+        <div key={key}>
+          <h1>Experience</h1>
+          {console.log('Key:', key)}
+          {console.log('PersonalInfo:', info)}
+          <p>Role{info.Title}</p>
+          <p>Role description: {info.Description}</p>
+          <p>Date Started: {info.Started}</p>
+          <p>Date Finsh: {info.Finish}</p>
+        </div>
+      ))}
+      
+      {Contact && Contact.map((info, key) => (
+        <div key={key}>
+          <h1>Contact</h1>
+          {console.log('Key:', key)}
+          {console.log('Contact:', info)}
+          <p>Github{info.Github}</p>
+          <p>LinkedIn: {info.LinkedIn}</p>
+          <p>X(Twiter): {info.X}</p>
+          <p>Phone number: {info.PhoneNumber}</p>
+        </div>
+      ))}
+      {Skill && Skill.map((info, key) => (
+        <div key={key}>
+          <h1>Skill</h1>
+          {console.log('Key:', key)}
+          {console.log('Skill:', info)}
+          <p>Skills: {info.Skills}</p>
+        </div>
+      ))}
+
+      {Framework && Framework.map((info, key) => (
+        <div key={key}>
+          <h1>Framework</h1>
+          {console.log('Key:', key)}
+          {console.log('Framework:', info)}
+          <p>Skills: {info.Framework}</p>
+        </div>
+      ))}
+
+      {Project && Project.map((info, key) => (
+        <div key={key}>
+          <h1>Framework</h1>
+          {console.log('Key:', key)}
+          {console.log('Project:', info)}
+          <p>Title: {info.Title}</p>
+          <p>Summary: {info.Summary}</p>
+          <p>Technologies: {info.Technologies}</p>
+          <p>Dem link: {info.Demo}</p>
+          <p>Github: {info.GitHub}</p>
+        </div>
+      ))}

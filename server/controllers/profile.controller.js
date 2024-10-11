@@ -10,3 +10,4 @@ const getProfiles = (req, res) => {
 }
 
 module.exports = { getProfiles }
+

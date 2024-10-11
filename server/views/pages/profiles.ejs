@@ -1,3 +1,4 @@
+
 <!-- Inject bootstrap  endpoints-->
 <head>        
     <link rel='stylesheet' href='/stylesheets/style.css' />
@@ -9,14 +10,14 @@
 </head>
 
 <div class="w-100">
-    <div style="position: sticky; float: right;">
-        <a class="fs-4 me-3" href="/">Back</a>
-        <a class="btn" href="/profiles/create_profile">Create profile</a>
-    </div>
-    <div>
+    <div style="position: sticky; display: flex; justify-content: flex-start;">
         <h1><%= title %></h1>
+        <div class="w-75">
+            <a class="btn float-end p-2 m-2" href="/profiles/create_profile">Create profile</a>
+        </div>
     </div>
-    <div class="" style="width: 100%; display: flex; justify-content: center; height: 100%;">
+
+    <div  style="width: 100%; display: flex; justify-content: center; height: max-content;">
         <div class="cards-div-content">
             <!-- Fetch profiles form database -->
              <% profiles ? profiles.map((profile) => { %>
@@ -30,6 +31,7 @@
                         <h2><%=  profile.Title %></h2>
                         <a class="btn" href= /profiles/<%= profile._id %> >Open profile</a>
                     </div>
+                    <span></span>
                 </div>
              <% }) : 'No profile Available' %>
         </div>

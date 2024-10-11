@@ -1,19 +1,17 @@
-
 const mongoose = require('mongoose');
 
 
-const SkillSchema = mongoose.Schema({
+const FrameworkSchema = mongoose.Schema({
     ProfileID: {
         type: String,
         required: true
     },
-    Skills: {
+    Framework: {
         type: String,
         required: true
     },
-
 }, { timestamps: true })
 
-const Skill = mongoose.model('Skills', SkillSchema);
+const Framework = mongoose.model('Frameworks', FrameworkSchema);
 
-module.exports = Skill;
+module.exports = Framework;

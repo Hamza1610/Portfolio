@@ -1,3 +1,4 @@
+
 const mongoose = require('mongoose');
 
 const LoginSchema = mongoose.Schema({
@@ -12,5 +13,6 @@ const LoginSchema = mongoose.Schema({
 }, { timestamps: true })
 
 const LogIn = mongoose.model('Login', LoginSchema);
+
 
 module.exports = LogIn;

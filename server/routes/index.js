@@ -10,7 +10,8 @@ var headLocals = {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('layout', { title: 'Dashboard', body: "<%- include('./pages/index.ejs') %>" });
+
+  res.render('layout', { title: 'Dashboard', page: 'index' });
 });
 
 router.get('/blog', function(req, res, next) {
