@@ -118,3 +118,11 @@
     font-size: .7em;
   } 
 }
+
+
+.round-card-image {
+  width:90px;
+  height:90px;
+  box-shadow: 3px 3px 12px 3px;
+  color: rgb(13 110 253);
+}
