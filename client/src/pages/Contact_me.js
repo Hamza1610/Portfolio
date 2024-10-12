@@ -1,6 +1,9 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import axios from "axios";
+import { motion } from "framer-motion";
+
+
 const ContactMe = ({ contactDetails }) => {
 
     const testAPI =  async () => {
@@ -21,7 +24,11 @@ const ContactMe = ({ contactDetails }) => {
         
     }
     return ( 
-        <div id='contact' style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
+        <motion.div
+        
+        >
+
+            <div id='contact' style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
             <hr style={{ width: '80vw',  height:'1em' }}/>
             <h3 className='bg-dark'>Contact me</h3>
             {contactDetails[0] ? (
@@ -40,14 +47,15 @@ const ContactMe = ({ contactDetails }) => {
                     <a href='#'><i style={{fontSize: '1.2em'}} className='fab fa-twitter m-2 h3'></i></a>
                     <a href="tel:+2349026880099"><i style={{fontSize: '1.2em'}} className='fab fa-whatsapp m-2 h3'></i></a>
                 </div>
-            )}
-            <Form action='mailto:hamza.dev001@gmail.com' method='post'>
-                <Form.Group style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-                    <Form.Control className='w-100 m-0' size="md" type="text" placeholder="message me" name='message' required/>
-                    <Button className='mt-2' onClick={ () => testAPI() } >Send</Button>
-                </Form.Group>
-            </Form>
-        </div>
+                )}
+                <Form action='mailto:hamza.dev001@gmail.com' method='post'>
+                    <Form.Group style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
+                        <Form.Control className='w-100 m-0' size="md" type="text" placeholder="message me" name='message' required/>
+                        <Button className='mt-2' onClick={ () => testAPI() } >Send</Button>
+                    </Form.Group>
+                </Form>
+            </div>
+        </motion.div>
     );
 }
  
