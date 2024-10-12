@@ -1,9 +1,12 @@
 import Card from 'react-bootstrap/Card';
-
+import { motion } from 'framer-motion'
 
 const ProjectCard = ({ projectContent })=>  {
   return (
-    <div className='m-0 p-0 d-flex justify-content-center align-items-center'>
+    <motion.div
+      className='m-0 p-0 d-flex justify-content-center align-items-center'
+      
+      >
       <Card style={{ width: '12rem', height: '18rem', fontSize: '.5rem'}} className='custon-card m-0 bg-secondary fs-5' border='primary'>
         <Card.Body>
           <Card.Title style={{color:'white'}}><h5>{projectContent.Title || 'Project Title'}</h5></Card.Title>
@@ -13,11 +16,11 @@ const ProjectCard = ({ projectContent })=>  {
           </Card.Text>
         </Card.Body>
         <Card.Body className='p-0 m-0 text-center'>
-          <Card.Link href={projectContent.Demo || 'http://localhost:3000/'} style={{fontSize: '.7rem'}}>Project Link</Card.Link>
-          <Card.Link href={projectContent.GitHub || 'http://localhost:3000/'} style={{fontSize: '.7rem'}}>Preview Link</Card.Link>
+          <Card.Link href={projectContent.Demo || 'https://github/Hamza1610'} style={{fontSize: '.7rem'}}>Project Link</Card.Link>
+          <Card.Link href={projectContent.GitHub || 'https://github/Hamza1610'} style={{fontSize: '.7rem'}}>Preview Link</Card.Link>
         </Card.Body>
       </Card>
-    </div>
+    </motion.div>
   );
 }
 
