@@ -30,7 +30,12 @@ const ContactMe = ({ contactDetails }) => {
 
             <div id='contact' style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
             <hr style={{ width: '80vw',  height:'1em' }}/>
-            <h3 className='bg-dark'>Contact me</h3>
+            <motion.h3
+                whileInView={{ opacity: 1, x: 0}}
+                initial={{ opacity: 0.2, x: 20 }}
+                transition={{ type: 'spring', damping: 10, stiffness: 100,  duration: 1.4, delay: .75 }} 
+                className='bg-dark'
+            >Contact me</motion.h3>
             {contactDetails[0] ? (
                 <div style={{display:'flex', justifyContent:'space-around', alignItems:'center'}}>
                     <a href='mailto:hamza.dev001@gmail.com'><i style={{fontSize: '1.2em'}} className='fas fa-envelope m-2 h3'></i></a>
