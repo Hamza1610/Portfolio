@@ -122,7 +122,7 @@ const updateProfile = async () => {
     try {
         console.log('Form data', formData);
         
-        await fetch('http://localhost:3002/profiles/update_profile', {
+        await fetch('http://localhost:3002/profile/update_profile', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -188,7 +188,7 @@ const addExperienceFieldGroup = () => {
                     <label class="fw-semibold" for="finish">Finish</label>
                     <input class="role_finish form-control" type="text" name="finishedRoleDate" id="role_finish" required>
                 </div>
-                <button class="btn btn-danger" onclick="removeFieldGroup(this)">Remove</button>
+                <button class="btn btn-danger btn-close" onclick="removeFieldGroup(this)"></button>
     `;
     FormContainer.appendChild(newFormGroup);
 }
@@ -205,7 +205,7 @@ const addCertificationsFieldGroup = () => {
 
                 <label for="cert_image">Upload certificate</label>
                 <input class="cert_image form-control w-25" type="file" accept=".jpg, .png" name="certificationType" id="cert_image">
-                <button class="btn btn-danger" onclick="removeFieldGroup(this)">Reomve</button>
+                <button class="btn btn-danger btn-close" onclick="removeFieldGroup(this)"></button>
             `;
             FormContainer.appendChild(newFormGroup);
             
@@ -220,7 +220,7 @@ const addFrameworkFieldGroup = () => {
     newFormGroup.className = 'framework-group d-flex gap-3';
     newFormGroup.innerHTML = `
                 <input class="framework form-control w-75 m-1" placeholder="example: Node js, Python, Ruby .." type="text" name="language" id="framework">
-                <button class="btn btn-danger" onclick="removeFieldGroup(this)">Remove</button>
+                <button class="btn btn-danger btn-close" onclick="removeFieldGroup(this)"></button>
     `;
     FormContainer.appendChild(newFormGroup);
 }
@@ -233,7 +233,7 @@ const addSkillFieldGroup = () => {
      newFormGroup.className = 'skill-group w-25 d-flex flex-nowrap';
      newFormGroup.innerHTML = `
                 <input class="skills form-control m-1" placeholder="example: Time emanagement | Critical thinking .." type="text" name="skills" id="skills">
-                <button class="btn btn-danger w-auto" onclick="removeFieldGroup(this)">Remove</button>
+                <button class="btn btn-danger w-auto btn-close" onclick="removeFieldGroup(this)"></button>
      `;
      FormContainer.appendChild(newFormGroup);
 }
@@ -260,7 +260,7 @@ const addProjectFieldGroup = () => {
                 
         <label for="project_live_link">Live link</label>
         <input class="project_live_link form-control w-100 m-1 h-auto" rows="5" type="text" name="projectLiveLink" id="project_live_link">
-        <button class="btn btn-danger m-3" onclick="removeFieldGroup(this)">Remove</button>
+        <button class="btn btn-danger btn-close m-3" onclick="removeFieldGroup(this)"></button>
     `;
     FormContainer.appendChild(newFormGroup);        
 }
