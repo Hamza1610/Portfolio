@@ -13,7 +13,7 @@ const IntroMe = ({ PersonalInfo, Summary }) => {
         
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0.2, x: -25 }}
-            transition={{ duration: .1, delay: .5, stiffness: 4 }}
+            transition={{ type: 'spring', damping: 10, stiffness: 100,  duration: 1.4, delay: .75 }}
         >
             <Image className='profile-image' src={logo}/>  
         </motion.div>
@@ -21,14 +21,20 @@ const IntroMe = ({ PersonalInfo, Summary }) => {
         
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0.2, x: 25 }}
-            transition={{ duration: 1, delay: .5 }}
+            transition={{ type: 'spring', damping: 10, stiffness: 100,  duration: 1.4, delay: .75 }}
             style={{width: '565px'}}
         >
             <h2 style={{fontSize: '2rem'}}>{PersonalInfo[0].Name}</h2> 
             <h3 style={{fontSize: '1.2rem'}}>{PersonalInfo[0].Title}</h3> 
             <div>
                 <p className='summary'>{Summary[0].Content}</p>
-                <a className='resume-btn' href='resume-software-engineer.pdf'>Download resume <i className='fas fa-file-lines'></i></a>
+                <motion.a
+                    animate={{ scaleX: 1.2, scaleY:1.2 }}
+                    initial={{ opacity: 1}}
+                    transition={{ duration: 1, repeat: Infinity }}
+                    className='resume-btn' href='resume-software-engineer.pdf'
+                >Download resume <i className='fas fa-file-lines'></i>
+                </motion.a>
             </div>
         </motion.div>
     </Container>
