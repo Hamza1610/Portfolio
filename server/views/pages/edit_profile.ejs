@@ -38,7 +38,7 @@
                         <input value="<%= entry['Started'] %>" class="edu_started w-25  form-control" type="text" name="Institution started date" id="edu_started" required>
                         <label class="fw-semibold" for="finish">Finish</label>
                         <input value="<%= entry['Finish'] %>" class="edu_finish w-25 form-control" type="text" name="Institution finish date" id="edu_finish" required>
-                        <button class="m-2 btn btn-danger" onclick="removeFieldGroup(this)">Remove</button>    
+                        <button class="m-2 btn btn-danger btn-close" onclick="removeFieldGroup(this)"></button>    
                     </div>
                 <% }) %>
             </div>
@@ -65,7 +65,7 @@
                             <label class="fw-semibold" for="finish">Finish</label>
                             <input  value="<%= entry['Finish:'] %>" class="role_finish form-control" type="text" name="Finish role date" id="role_finish" required>
                         </div>
-                        <button class="btn btn-danger" onclick="removeFieldGroup(this)">Remove</button>
+                        <button class="btn btn-close btn-danger" onclick="removeFieldGroup(this)"></button>
                     </div> 
                 <% }) %>
             </div> 
@@ -113,7 +113,7 @@
                 <%  profile['Framework'].map((entry, index) => { %>
                     <div class="framework-group d-flex gap-3">
                         <input value="<%= entry['Framework'] && entry['Framework'] %>" class="framework form-control w-75 m-1" placeholder="example: Node js, Python, Ruby .." type="text" name="Framework/Languages" id="framework">
-                        <button class="btn btn-danger" onclick="removeFieldGroup(this)">Remove</button>
+                        <button class="btn btn-danger btn-close" onclick="removeFieldGroup(this)"></button>
                     </div>
                 <% }) %>
             </div>
@@ -129,7 +129,7 @@
                 <% profile['Skill'] && profile['Skill'].map((entry, index) => { %>
                     <div class="skill-group w-25 d-flex flex-nowrap">
                         <input value="<%= entry['Skills'] %>" class="skills form-control m-1" placeholder="example: Time emanagement | Critical thinking .." type="text" name="Skills" id="skills">
-                        <button class="btn btn-danger w-auto" onclick="removeFieldGroup(this)">Remove</button>
+                        <button class="btn btn-danger btn-close w-auto" onclick="removeFieldGroup(this)"></button>
                     </div>
                 <% }) %>
             </div>
@@ -158,7 +158,7 @@
                         
                         <label for="project_live_link">Live link</label>
                         <input value="<%= entry['Demo'] && entry['Demo'] %>" class="project_live_link form-control w-100 m-1 h-auto" rows="5" type="text" name="Project live link" id="project_live_link">
-                        <button class="btn btn-danger m-3" onclick="removeFieldGroup(this)">Remove</button>
+                        <button class="btn btn-danger btn-close m-3" onclick="removeFieldGroup(this)"></button>
                     </div>
                 <% }) %>
             </div>
