@@ -19,6 +19,17 @@ router.get('/', async function(req, res, next) {
   }   
 });
 
+router.get('/ats', async function(req, res, next) {
+  // body: "<%- include('./pages/profiles.ejs') %>" 
+  try {
+    res.render('layout', { title: 'ATS', page: 'ats' }); 
+
+  } catch (error) {
+    console.log(error);
+    res.render('layout', { title: 'Profiles', page: 'ats' }); 
+  }   
+});
+
 /* GET Create Profile page. */
 router.get('/create_profile', async function(req, res, next) {
   // body: "<%- include('./pages/profiles.ejs') %>" 
