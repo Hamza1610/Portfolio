@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "6703b92e288829b60d02eff8"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "PhoneNumber": "+2349026880099",
+  "Github": "https://github.com/Hamza1610",
+  "LinkedIn": "linkedin.com/in/muhamm ad-hamza-7239b9237",
+  "X": "twitter.com/muhamma90 584326",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.121Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:52:45.175Z"
+  },
+  "__v": 0
+}]
