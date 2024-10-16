@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "6703b92e288829b60d02eff9"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Skills": "Problem solving",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.122Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:52:45.175Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6703b92e288829b60d02effa"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Skills": "Problem solving",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.122Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:34:22.122Z"
+  },
+  "__v": 0
+}]
