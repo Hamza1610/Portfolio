@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "6703b92e288829b60d02effb"
+  },
+  "Content": "I'm a Full stack web developer with a experience in building scalable and\nsecure fullstack application systems. Leverages the latest technologies to\ndeliver high-performance APIs and microservices that power\nmodern web applications. Proven ability to meet the needs of\ndemanding clients and exceed expectations.",
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.122Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:52:45.176Z"
+  },
+  "__v": 0
+}]
