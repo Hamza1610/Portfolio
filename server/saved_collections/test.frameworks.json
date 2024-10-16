@@ -1,0 +1,140 @@
+[{
+  "_id": {
+    "$oid": "6703b92e288829b60d02effc"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Framework": "FastAPI",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.122Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:52:45.177Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6703b92e288829b60d02effd"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Framework": "FastAPI",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.122Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:34:22.122Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6703b92e288829b60d02effe"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Framework": "React",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.122Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:34:22.122Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6703b92e288829b60d02efff"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Framework": "Nuxt js",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.123Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:34:22.123Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6703b92e288829b60d02f000"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Framework": "Postgres",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.123Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:34:22.123Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6703b92e288829b60d02f001"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Framework": "MySQL",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.123Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:34:22.123Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6703b92e288829b60d02f002"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Framework": "MongoDB",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.125Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:34:22.125Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6703b92e288829b60d02f003"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Framework": "Scikit Learn",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.125Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:34:22.125Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6703b92e288829b60d02f004"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Framework": "Python",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.125Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:34:22.125Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6703b92e288829b60d02f005"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Framework": "Bootstrap",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.125Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:34:22.125Z"
+  },
+  "__v": 0
+}]
