@@ -122,29 +122,28 @@ const updateProfile = async () => {
     try {
         console.log('Form data', formData);
         
-        await fetch('http://localhost:3002/profile/update_profile', {
+        const response = await fetch('/profiles/update_profile', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(formData)
         })
-        .then((response) => {
-            if (response.ok) {
-                const result = response.json();
-                console.log('Profile created', result);
-                navigateBack.click();
+
+        if (response.ok) {
+            const result = response.json();
+            console.log('Profile created', result);
+            navigateBack.click();
                 
-            } else {
-                console.error('Error occurred:', response.json());
-                console.error('Error  status:', response.status());
-                error.textContent = `Error occurred: ${response.json()}`;
-            }
-        })
+        } else {
+            console.error('Error occurred:', response.json());
+            console.error('Error  status:', response.status());
+            error.textContent = `Error occurred: ${response.json()}`;
+        }
 
     } catch (error) {
         console.error('Request failed:', error);
-        error.textContent = "Error occurred!: ", error;
+        error.textContent = "Error occurred!: " + error;
     }
 };
 
@@ -163,7 +162,7 @@ const addEducationFieldGroup = () => {
                 <input class="edu_started w-25  form-control" type="text" name="startedInstitutionDate" id="edu_started" required>
                 <label class="fw-semibold" for="finish">Finish</label>
                 <input class="edu_finish w-25 form-control" type="text" name="finishedInstitutionDate" id="edu_finish" required>
-                <button class="m-2 btn btn-danger" onclick="removeFieldGroup(this)">Remove</button>  
+                <button class="m-2 btn btn-danger btn-close" onclick="removeFieldGroup(this)"></button>  
     `;
     FormContainer.appendChild(newFormGroup);
 }
