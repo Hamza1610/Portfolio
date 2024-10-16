@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "6703b92e288829b60d02eff4"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Name": "ALX Software Engineering",
+  "Started": {
+    "$date": "2022-11-03T00:00:00.000Z"
+  },
+  "Finish": {
+    "$date": "2023-02-07T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.121Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:52:45.175Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6703b92e288829b60d02eff5"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Name": "ALX Software Engineering",
+  "Started": {
+    "$date": "2022-11-03T00:00:00.000Z"
+  },
+  "Finish": {
+    "$date": "2023-02-07T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.121Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:34:22.121Z"
+  },
+  "__v": 0
+}]
