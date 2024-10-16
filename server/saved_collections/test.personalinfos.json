@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "6703b92e288829b60d02eff3"
+  },
+  "ProfileID": "6703b92e288829b60d02eff1",
+  "Name": "Muhammad Hamza",
+  "Title": "Full Stack Developer",
+  "Address": "Hanwa Rafin Sidi Zaria",
+  "createdAt": {
+    "$date": "2024-10-07T10:34:22.120Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-07T10:52:45.172Z"
+  },
+  "__v": 0
+}]
