@@ -11,7 +11,7 @@ const  ProfileList = () => {
     useEffect(() => {
         const fetchProfileTitles = async () => {
             try {
-                const response = await axios.get('http://localhost:3002/api/get-all-profiles');
+                const response = await axios.get('http://localhost:3020/api/get-all-profiles');
     
                 console.log('Profiles', response);
                 
