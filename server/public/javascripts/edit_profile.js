@@ -120,7 +120,7 @@ const updateProfile = async () => {
         }
     }
     try {
-        console.log('Form data', formData);
+        console.log('Updated Form data', formData);
         
         const response = await fetch('/profiles/update_profile', {
             method: 'PUT',
@@ -133,7 +133,7 @@ const updateProfile = async () => {
         if (response.ok) {
             const result = response.json();
             console.log('Profile created', result);
-            navigateBack.click();
+            // navigateBack.click();
                 
         } else {
             console.error('Error occurred:', response.json());
