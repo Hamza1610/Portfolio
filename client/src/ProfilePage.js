@@ -20,7 +20,7 @@ const Profile = () => {
     const fetchProfileData = async () => {
       try {
         console.log('Received id:', profileId);
-        const response = await axios.get(`http://localhost:3002/api/get-profile/${profileId}`);
+        const response = await axios.get(`http://localhost:3020/api/get-profile/${profileId}`);
 
         if (response.status === 200) {
           setProfile(response.data); // Set the profile data on success
