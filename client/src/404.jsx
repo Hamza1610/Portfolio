@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
 
-
 const NotFoundPage = () => {
+
+    
     return (
         <div className="not-found-page" style={{width: '100vw',  height: '100vh', display: 'flex', justifyContent: 'space-around', alignItems: 'center'}}>
             <motion.div
