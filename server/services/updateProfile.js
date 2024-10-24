@@ -15,6 +15,7 @@ module.exports = async function updateProfile(data) {
             Name: PersonalInfo['Name'], Title: PersonalInfo['Title'], Address: PersonalInfo['Address'],
             ProfileID: profileId
         })
+
         .then((result) => console.log(`PersonalInfo create: `, result))
 
         // adding institution data
