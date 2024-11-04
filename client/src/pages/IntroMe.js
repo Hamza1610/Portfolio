@@ -20,7 +20,7 @@ const IntroMe = ({ PersonalInfo, Summary }) => {
         <motion.div 
         
             whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0.2, x: 25 }}
+            initial={{ opacity: 0.2, x: 20 }}
             transition={{ type: 'spring', damping: 10, stiffness: 100,  duration: 1.4, delay: .75 }}
             style={{width: '565px'}}
         >
