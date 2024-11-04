@@ -87,6 +87,7 @@ router.get('/contact/:id', async function(req, res, next) {
 
     try {
       const profile = await getProfile(id);
+      console.log(profile)
       res.status(200).json({profile});    
     } catch (error) {
       console.log(error);
