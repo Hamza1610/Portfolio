@@ -1,0 +1,228 @@
+[
+    {
+        "_id": 1,
+        "PersonalInfo": [
+            {
+                "_id": "670fa20942da4f63127ab3fb",
+                "ProfileID": "1",
+                "Name": "Muhammad Hamza",
+                "Title": "Full satck developer 1",
+                "Address": "Hanwa Rafin Sidi Zaria",
+                "createdAt": "2024-10-16T11:22:50.020Z",
+                "updatedAt": "2024-10-16T11:23:07.816Z",
+                "__v": 0
+            }
+        ],
+        "Education": [
+            {
+                "_id": "670fa20942da4f63127ab3fc",
+                "ProfileID": "1",
+                "Name": "Ahmadu Bello University",
+                "Started": "2024-02-16T00:00:00.000Z",
+                "Finish": "2024-10-16T00:00:00.000Z",
+                "createdAt": "2024-10-16T11:22:50.021Z",
+                "updatedAt": "2024-10-16T11:23:07.823Z",
+                "__v": 0
+            }
+        ],
+        "Experience": [
+            {
+                "_id": "670fa20942da4f63127ab3fd",
+                "ProfileID": "1",
+                "Title": "Backend develper at Deminifah .Inc",
+                "Description": "FRWE\nRFEW\nTWERT\nWETRETUIEORTBIRBTION  TWPOI4E TRJTPOI 494Hj9\n9t39-\n3u4--0",
+                "Started": "2024-10-16T00:00:00.000Z",
+                "Finish": "2024-10-06T00:00:00.000Z",
+                "createdAt": "2024-10-16T11:22:50.022Z",
+                "updatedAt": "2024-10-16T11:23:07.823Z",
+                "__v": 0
+            }
+        ],
+        "Contact": [
+            {
+                "_id": "670fa20942da4f63127ab3fe",
+                "ProfileID": "1",
+                "PhoneNumber": "09026880099",
+                "Github": "test",
+                "LinkedIn": "test",
+                "X": "test",
+                "createdAt": "2024-10-16T11:22:50.023Z",
+                "updatedAt": "2024-10-16T11:23:07.823Z",
+                "__v": 0
+            }
+        ],
+        "Skill": [
+            {
+                "_id": "670fa20942da4f63127ab3ff",
+                "ProfileID": "1",
+                "Skills": "Time",
+                "createdAt": "2024-10-16T11:22:50.024Z",
+                "updatedAt": "2024-10-16T11:23:07.833Z",
+                "__v": 0
+            },
+            {
+                "_id": "670fa20942da4f63127ab400",
+                "ProfileID": "1",
+                "Skills": "Time",
+                "createdAt": "2024-10-16T11:22:50.025Z",
+                "updatedAt": "2024-10-16T11:22:50.025Z",
+                "__v": 0
+            }
+        ],
+        "Summary": [
+            {
+                "_id": "670fa20942da4f63127ab401",
+                "Content": "DVGIDSNG  99 dz09ekrnewioe9 93weiwiorir9ew 90 49w09rh90ewqkeroieotewt  09ew[h hth et9ejwjlewat09\naf jm9 90039 390u-243",
+                "ProfileID": "1",
+                "createdAt": "2024-10-16T11:22:50.025Z",
+                "updatedAt": "2024-10-16T11:23:07.833Z",
+                "__v": 0
+            }
+        ],
+        "Framework": [
+            {
+                "_id": "670fa20942da4f63127ab402",
+                "ProfileID": "1",
+                "Framework": "Python",
+                "createdAt": "2024-10-16T11:22:50.029Z",
+                "updatedAt": "2024-10-16T11:23:07.835Z",
+                "__v": 0
+            },
+            {
+                "_id": "670fa20942da4f63127ab403",
+                "ProfileID": "1",
+                "Framework": "Python",
+                "createdAt": "2024-10-16T11:22:50.030Z",
+                "updatedAt": "2024-10-16T11:22:50.030Z",
+                "__v": 0
+            }
+        ],
+        "Project": [
+            {
+                "_id": "670fa20942da4f63127ab404",
+                "ProfileID": "1",
+                "Title": "UserDL",
+                "Summary": "dzdisonp",
+                "Technologies": "Node js | React",
+                "GitHub": "test",
+                "Demo": "test",
+                "createdAt": "2024-10-16T11:22:50.031Z",
+                "updatedAt": "2024-10-16T11:23:07.835Z",
+                "__v": 0
+            }
+        ]
+    },
+    {
+        "_id": 2,
+        "PersonalInfo": [
+            {
+                "_id": "2",
+                "ProfileID": "2",
+                "Name": "Muhammad Hamza",
+                "Title": "Machine Learning Engineer",
+                "Address": "Hanwa Rafin Sidi Zaria",
+                "createdAt": "2024-10-16T11:22:50.020Z",
+                "updatedAt": "2024-10-16T11:23:07.816Z",
+                "__v": 0
+            }
+        ],
+        "Education": [
+            {
+                "_id": "670fa20942da4f63127ab3fc",
+                "ProfileID": "2",
+                "Name": "Ahmadu Bello University",
+                "Started": "2024-02-16T00:00:00.000Z",
+                "Finish": "2024-10-16T00:00:00.000Z",
+                "createdAt": "2024-10-16T11:22:50.021Z",
+                "updatedAt": "2024-10-16T11:23:07.823Z",
+                "__v": 0
+            }
+        ],
+        "Experience": [
+            {
+                "_id": "670fa20942da4f63127ab3fd",
+                "ProfileID": "2",
+                "Title": "Backend develper at Deminifah .Inc",
+                "Description": "FRWE\nRFEW\nTWERT\nWETRETUIEORTBIRBTION  TWPOI4E TRJTPOI 494Hj9\n9t39-\n3u4--0",
+                "Started": "2024-10-16T00:00:00.000Z",
+                "Finish": "2024-10-06T00:00:00.000Z",
+                "createdAt": "2024-10-16T11:22:50.022Z",
+                "updatedAt": "2024-10-16T11:23:07.823Z",
+                "__v": 0
+            }
+        ],
+        "Contact": [
+            {
+                "_id": "670fa20942da4f63127ab3fe",
+                "ProfileID": "2",
+                "PhoneNumber": "09026880099",
+                "Github": "test",
+                "LinkedIn": "test",
+                "X": "test",
+                "createdAt": "2024-10-16T11:22:50.023Z",
+                "updatedAt": "2024-10-16T11:23:07.823Z",
+                "__v": 0
+            }
+        ],
+        "Skill": [
+            {
+                "_id": "670fa20942da4f63127ab3ff",
+                "ProfileID": "2",
+                "Skills": "Time",
+                "createdAt": "2024-10-16T11:22:50.024Z",
+                "updatedAt": "2024-10-16T11:23:07.833Z",
+                "__v": 0
+            },
+            {
+                "_id": "670fa20942da4f63127ab400",
+                "ProfileID": "2",
+                "Skills": "Time",
+                "createdAt": "2024-10-16T11:22:50.025Z",
+                "updatedAt": "2024-10-16T11:22:50.025Z",
+                "__v": 0
+            }
+        ],
+        "Summary": [
+            {
+                "_id": "670fa20942da4f63127ab401",
+                "Content": "DVGIDSNG  99 dz09ekrnewioe9 93weiwiorir9ew 90 49w09rh90ewqkeroieotewt  09ew[h hth et9ejwjlewat09\naf jm9 90039 390u-243",
+                "ProfileID": "2",
+                "createdAt": "2024-10-16T11:22:50.025Z",
+                "updatedAt": "2024-10-16T11:23:07.833Z",
+                "__v": 0
+            }
+        ],
+        "Framework": [
+            {
+                "_id": "670fa20942da4f63127ab402",
+                "ProfileID": "2",
+                "Framework": "Python",
+                "createdAt": "2024-10-16T11:22:50.029Z",
+                "updatedAt": "2024-10-16T11:23:07.835Z",
+                "__v": 0
+            },
+            {
+                "_id": "670fa20942da4f63127ab403",
+                "ProfileID": "2",
+                "Framework": "Python",
+                "createdAt": "2024-10-16T11:22:50.030Z",
+                "updatedAt": "2024-10-16T11:22:50.030Z",
+                "__v": 0
+            }
+        ],
+        "Project": [
+            {
+                "_id": "670fa20942da4f63127ab404",
+                "ProfileID": "2",
+                "Title": "UserDL",
+                "Summary": "dzdisonp",
+                "Technologies": "Node js | React",
+                "GitHub": "test",
+                "Demo": "test",
+                "createdAt": "2024-10-16T11:22:50.031Z",
+                "updatedAt": "2024-10-16T11:23:07.835Z",
+                "__v": 0
+            }
+        ]
+    }
+]
