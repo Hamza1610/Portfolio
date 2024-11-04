@@ -55,8 +55,8 @@
             formData[`Experience`][index] = formData[`Experience`][index] || {}
             formData[`Experience`][index]['Title'] = roleTitles[index].value;
             formData[`Experience`][index]['Description'] = roleDescriptions[index].value;
-            formData[`Experience`][index]['Started'] = roleStarteds[index].value;
-            formData[`Experience`][index]['Finish'] = roleFinishes[index].value;
+            formData[`Experience`][index]['Started'] = new Date(roleStarteds[index].value);
+            formData[`Experience`][index]['Finish'] = new Date(roleFinishes[index].value);
         };
 
         
