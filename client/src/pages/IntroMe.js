@@ -32,7 +32,7 @@ const IntroMe = ({ PersonalInfo, Summary }) => {
                     animate={{ scaleX: 1.2, scaleY:1.2 }}
                     initial={{ opacity: 1}}
                     transition={{ duration: 1, repeat: Infinity }}
-                    className='resume-btn' href='resume-software-engineer.pdf'
+                    className='resume-btn' href='/resume-software-engineer.pdf'
                 >Download resume <i className='fas fa-file-lines'></i>
                 </motion.a>
             </div>
