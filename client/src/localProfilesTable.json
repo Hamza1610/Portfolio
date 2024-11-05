@@ -40,7 +40,7 @@
                 "_id": "1",
                 "ProfileID": "1",
                 "Title": "Backend Developer at Deminifah Inc.",
-                "Description": "Developed scalable backend services and APIs. Focused on enhancing database performance, optimizing security standards, and improving system efficiency.",
+                "Description": "Develop scalable backend services and APIs. Focus on enhancing database performance, optimizing security standards, and improving system efficiency.",
                 "Started": "2024-10-16T00:00:00.000Z",
                 "Finish": "2024-10-06T00:00:00.000Z",
                 "createdAt": "2024-10-16T11:22:50.022Z",
@@ -61,8 +61,8 @@
             {
                 "_id": "3",
                 "ProfileID": "1",
-                "Title": "CO Community Lead at Robotics and Artificial Intelligence Innovators Network (RAIN-INN)",
-                "Description": "Led a thriving community of AI and robotics enthusiasts, facilitating workshops, organizing hackathons, and fostering collaboration among members. Focused on enhancing member engagement through mentorship, networking events, and resource-sharing initiatives to advance innovation in robotics and AI.",
+                "Title": "CO-Community Lead at Robotics and Artificial Intelligence Innovators Network (RAIN-INN)",
+                "Description": "I led a thriving community of AI and robotics enthusiasts, facilitating workshops, organizing hackathons, and fostering collaboration among members. Focused on enhancing member engagement through mentorship, networking events, and resource-sharing initiatives to advance innovation in robotics and AI.",
                 "Started": "2024-10-16T00:00:00.000Z",
                 "Finish": "2024-10-06T00:00:00.000Z",
                 "createdAt": "2024-10-16T11:22:50.022Z",
@@ -96,7 +96,7 @@
         "Summary": [
             {
                 "_id": "1",
-                "Content": "Dynamic Full Stack Software Engineer with a strong foundation in developing and deploying robust web applications. Skilled in backend and frontend development, specializing in Node.js, React, FastAPI and PostgreSQL.",
+                "Content": "Dynamic Full Stack Software Engineer with a strong foundation in developing and deploying robust web applications. Skilled in backend, frontend and machine learning development, I have specialized in Node.js, React, FastAPI and Databases(PostgreSQL, MongoDB, MySQL).",
                 "ProfileID": "1",
                 "createdAt": "2024-10-16T11:22:50.025Z",
                 "updatedAt": "2024-10-16T11:23:07.833Z",
