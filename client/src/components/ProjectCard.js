@@ -14,8 +14,6 @@ const ProjectCard = ({ projectContent })=>  {
             <p style={{fontSize: '.6rem', textAlign: 'justify'}}><b>Project Summary</b>: {projectContent.Summary || ''}</p>
             <p style={{fontSize: '.7rem', textAlign: 'justify'}}><b>Technologies</b>: {projectContent.Technologies || ''}</p>
           </Card.Text>
-        </Card.Body>
-        <Card.Body className='p-0 m-0 text-center'>
           <Card.Link href={projectContent.Demo || 'https://github/Hamza1610'} style={{fontSize: '.7rem'}}>Project Link</Card.Link>
           <Card.Link href={projectContent.GitHub || 'https://github/Hamza1610'} style={{fontSize: '.7rem'}}>Preview Link</Card.Link>
         </Card.Body>
