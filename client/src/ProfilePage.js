@@ -86,6 +86,7 @@ const Profile = () => {
 
   return (
     <div id="app" className="App bg-dark">
+      
       {/* Optionally render navigation and other components */}
       <Navigation />
       <IntroMe  Summary={Summary} PersonalInfo={PersonalInfo} />
