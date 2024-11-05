@@ -14,7 +14,7 @@ const Technologies = ({ technologies }) => {
                 <hr style={{ width: '50vw',  height:'1em' }}/>
             <motion.div>I'm exerienced in working with the following programming languages, frameworks and services</motion.div>
             <Row md={2}  lg={4}>
-                {technologies && technologies.map((item, key) => (<RoundCard key={key} imageSource={item.Framework} />))}
+                {technologies && technologies.map((item, key) => (<RoundCard key={key} imageSource={item.Framework} {...item} />))}
             </Row>
         </Container>
     );
