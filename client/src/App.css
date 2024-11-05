@@ -147,3 +147,11 @@
 .arrow {
   color: rgb(33 37 41);
 }
+
+
+.description {
+  font-size: .9rem;
+  @media (max-width: 767px) {
+    font-size: .8rem;
+  } 
+}

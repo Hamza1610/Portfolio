@@ -28,7 +28,7 @@ const Experiences = ({ experience }) => {
                             
                             >
                                 <h6>{item.Title}</h6>
-                                <p style={{fontSize: '.9rem'}}>{item.Description}</p>
+                                <p className='description'>{item.Description}</p>
                             </motion.div>
                         </li>
                     ))}
