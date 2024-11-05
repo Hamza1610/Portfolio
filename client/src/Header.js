@@ -5,36 +5,43 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react';
 
 const Navigation = () => {
-
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const closeOffCanvasAndNavigate = (event) => {
+    handleClose()
+    
+  }
 
-  const [offcanvasStyle, setOffcanvasStyle] = useState({color: 'white'})
+  const offcanvasStyle = { color: 'white' };
 
   return (
     <Navbar expand="md">
       <Container className='justify-content-between'>
-        <Navbar.Toggle  aria-controls='basic-navbar-nav' variant='primary' />
-        <Navbar.Offcanvas
-          id={`offcanvasNavbarLabel-expand-lg`}
-          aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
+        <Navbar.Toggle onClick={handleShow} aria-controls='basic-navbar-nav' variant='primary' />
+        
+        {/* OffCanvas for mobile screens */}
+        <Offcanvas
+          show={show}
+          onHide={handleClose}
           placement='end'
           className='text-white'
-          >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>Menu</Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body className='justify-content-end'>
-              <Nav fill variant='pills' defaultActiveKey='/'>
-              <Nav.Link href='#projects' className='me-2' style={offcanvasStyle}>Projects</Nav.Link>
-              <Nav.Link href='#experience' className='me-2' style={offcanvasStyle}>Experience</Nav.Link>
-              <Nav.Link href='#technologies' className='me-2' style={offcanvasStyle}>Technologies</Nav.Link>
-              <Nav.Link href='#contact' className='me-2' style={offcanvasStyle}>Contact</Nav.Link>
-              </Nav>
-            </Offcanvas.Body>
-        </Navbar.Offcanvas>
+          responsive="sm" // Only show on mobile
+          style={{backgroundColor: 'rgb(33 37 41)'}}
+        >
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title>Menu</Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body className='justify-content-end'>
+            <Nav fill variant='pills' defaultActiveKey='/'>
+              <Nav.Link href='#projects' onClick={(event) => closeOffCanvasAndNavigate(event)} className='me-2' style={offcanvasStyle}>Projects</Nav.Link>
+              <Nav.Link href='#experience' onClick={(event) => closeOffCanvasAndNavigate(event)} className='me-2' style={offcanvasStyle}>Experience</Nav.Link>
+              <Nav.Link href='#technologies' onClick={(event) => closeOffCanvasAndNavigate(event)} className='me-2' style={offcanvasStyle}>Technologies</Nav.Link>
+              <Nav.Link href='#contact' onClick={(event) => closeOffCanvasAndNavigate(event)} className='me-2' style={offcanvasStyle}>Contact</Nav.Link>
+            </Nav>
+          </Offcanvas.Body>
+        </Offcanvas>
       </Container>
     </Navbar>
   );
