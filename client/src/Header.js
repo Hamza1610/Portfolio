@@ -11,8 +11,12 @@ const Navigation = () => {
   const handleShow = () => setShow(true);
   const closeOffCanvasAndNavigate = (event) => {
     handleClose()
-    
-  }
+
+    // if (){
+    //   setTimeout(() =>{
+    //     event.target.click()
+    //   }, 1500)
+    }
 
   const offcanvasStyle = { color: 'white' };
 
@@ -27,24 +31,24 @@ const Navigation = () => {
           onHide={handleClose}
           placement='end'
           className='text-white'
-          responsive="sm" // Only show on mobile
+          responsive="md" // Only show on mobile
           style={{backgroundColor: 'rgb(33 37 41)'}}
         >
-          <Offcanvas.Header closeButton>
+          <Offcanvas.Header closeButton style={{ backgroundColor: '#0a58ca' }}>
             <Offcanvas.Title>Menu</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body className='justify-content-end'>
             <Nav fill variant='pills' defaultActiveKey='/'>
               <Nav.Link href='#projects' onClick={(event) => closeOffCanvasAndNavigate(event)} className='me-2' style={offcanvasStyle}>Projects</Nav.Link>
-              <Nav.Link href='#experience' onClick={(event) => closeOffCanvasAndNavigate(event)} className='me-2' style={offcanvasStyle}>Experience</Nav.Link>
+              <Nav.Link href='#experience'  onClick={(event) => closeOffCanvasAndNavigate(event)} className='me-2' style={offcanvasStyle}>Experience</Nav.Link>
               <Nav.Link href='#technologies' onClick={(event) => closeOffCanvasAndNavigate(event)} className='me-2' style={offcanvasStyle}>Technologies</Nav.Link>
-              <Nav.Link href='#contact' onClick={(event) => closeOffCanvasAndNavigate(event)} className='me-2' style={offcanvasStyle}>Contact</Nav.Link>
+              <Nav.Link href='#contact'  onClick={(event) => closeOffCanvasAndNavigate(event)} className='me-2' style={offcanvasStyle}>Contact</Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Offcanvas>
       </Container>
     </Navbar>
   );
-};
+}
 
 export default Navigation;
