@@ -39,61 +39,62 @@ const  ProfileList = () => {
     return (
         <div
             style={{
-                width: '100vw',
-                display: 'block',
+                
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                
             }}>
             {error && ('ERROR: ' + error)}
-            <div>
-                {serverProfiles ? (
-                    <div
-                        style={{width: '70%',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            flexWrap: 'wrap',
-                            justifyContent:'space-evenly',
-                            alignItems: 'center',
-                            gap: '20px'}}
-                    >
-                        <h3>Server Profiles</h3>
-                        <hr style={{ width: '50%',  height:'1em' }}/>
+            {serverProfiles ? (
+                <div
+                    style={{
+                        width: '80%',
+                        marginBottom:'20px'
+                    }}
+                >
+                    <h3>Server Profiles</h3>
+                    <hr style={{ width: '50%',  height:'1em' }}/>
+                    <div style={{display: 'flex', gap: '20px',flexWrap: 'wrap', width: '100%'}}>
                         {serverProfiles.map((profile, index) => (<ProfileCard key={index} {...profile }/>))}
                     </div>
-                ) : (
-                    <motion.div
-                        whileInView={{ opacity: 1, x: 0 }}
-                        initial={{ opacity: 0.2, x: 70 }}
-                        transition={{ duration: .75, delay: .5 }}
-                    >
-                        <h3>No Available Profile</h3>
-                        <p style={{ textAlign: 'center' }}>No Server Profile Available</p>
-                    </motion.div>
-                )}
+                    
+                </div>
+            ) : (
+                <motion.div
+                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0.2, x: 70 }}
+                    transition={{ duration: .75, delay: .5 }}
+                >
+                    <h3>No Available Profile</h3>
+                    <p style={{ textAlign: 'center' }}>No Server Profile Available</p>
+                </motion.div>
+            )}
 
-            </div>
-
-            <div>
-                {localProfiles ? (
-                    <div style={{
-                        width: '70%',
-                        alignItems: 'center',
-                        gap: '20px'
-                        }}
-                    >
-                        <h3>Local Profiles</h3>
-                        <hr style={{ width: '50%',  height:'1em' }}/>
+            {localProfiles ? (
+                <div style={{
+                    width: '80%',
+                    marginBottom:'20px'
+                }}
+                >
+                    <h3>Local Profiles</h3>
+                    <hr style={{ width: '50%',  height:'1em' }}/>
+                    <div style={{display: 'flex',  gap: '20px', flexWrap: 'wrap', width: '100%'}}>
                         {localProfiles.map((profile, index) => (<ProfileCard key={index} {...profile } />))}
-                        </div>
-                    ) : (
-                        <motion.div
-                            whileInView={{ opacity: 1, x: 0 }}
-                            initial={{ opacity: 0.2, x: 70 }}
-                            transition={{ duration: .75, delay: .5 }}
-                        >
-                            <h3>No Available Profile</h3>
-                            <p style={{ textAlign: 'center' }}>No Local Profile Available</p>
-                        </motion.div>
-                    )}
-            </div>
+                    </div>
+                    
+                </div>
+            ) : (
+                <motion.div
+                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0.2, x: 70 }}
+                    transition={{ duration: .75, delay: .5 }}
+                >
+                    <h3>No Available Profile</h3>
+                    <p style={{ textAlign: 'center' }}>No Local Profile Available</p>
+                </motion.div>
+            )}
         </div>
       );
 }
