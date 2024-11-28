@@ -16,11 +16,13 @@
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "express3-ejs-layout": "^0.0.1",
+    "hamza_portfolio": "file:",
     "http-errors": "~1.6.3",
     "jquery": "^3.7.1",
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.3",
     "morgan": "~1.9.1",
+    "nodemon": "^3.1.7",
     "ws": "^8.18.0"
   }
 }
